@@ -1,3 +1,19 @@
+// ==UserScript==
+// @name         kamiloBot
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  testowanie
+// @author       viker
+// @match        https://*.margonem.pl/
+// @exclude      https://www.margonem.pl/
+// @icon         https://www.google.com/s2/favicons?domain=margonem.pl
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        unsafeWindow
+// @grant        GM_registerMenuCommand
+// @grant        GM_setClipboard
+// ==/UserScript==
+
 (() => {
   "use strict";
   class AStar {
@@ -949,4 +965,14 @@
         });
     }
   })();
+  const checkIfGameStarted = async () => {
+    if (!map && !g && !g.npc) {
+      await this.sleep(300);
+      checkIfGameStarted();
+      return false;
+    }
+    window.kamiloBot.init();
+  };
+  window.kamiloBot.parseInput();
+  g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
