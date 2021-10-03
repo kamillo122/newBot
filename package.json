@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express" : "4.17.1",
+    "cors" : "2.8.5",
+    "mongodb" : "4.0.1",
+    "yarn": "^1.22.10"
+  },
+  "name": "serverinfo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverExpress.js",
+  "scripts": {
+    "dev" : "node serverExpress.js",
+    "dev:watch" : "nodemon serverExpress.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serverExpress.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamillo122/newBot.git"
+  },
+  "author": "kamilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamillo122/newBot/issues"
+  },
+  "homepage": "https://github.com/kamillo122/newBot#readme"
+}
