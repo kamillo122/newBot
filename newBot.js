@@ -750,10 +750,7 @@
         while (true) {
           if (this.settings.buttonExp === "Wyłącz!") {
             const nextGw = window.getCordsOfNextGw(this.settings.expMaps);
-            if (
-              (!this.bestMob && nextGw) ||
-              this.bestMob.realDist < this.findBestMob(40, 50).realDist
-            ) {
+            if (!this.bestMob && nextGw) {
               this.bestMob = this.findBestMob(40, 50);
             } else if (nextGw && !(this.bestMob.id in this.npcArr)) {
               delete this.bestMob;
