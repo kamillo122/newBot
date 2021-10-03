@@ -974,6 +974,6 @@ console.log(npc);
     }
     window.kamiloBot.init();
   };
-  //window.kamiloBot.parseInput();
+  window.kamiloBot.parseInput();
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
