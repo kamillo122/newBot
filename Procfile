@@ -1,1 +1,1 @@
-web:node serverExpress.js
+web:node server.js
