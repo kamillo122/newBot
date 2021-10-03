@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 const uri =
   "mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const app = express();
-const PORT = 8080;
+const PORT = 8080 || process.env.PORT;
 const fs = require("fs");
 
 app.use(express.json());
