@@ -1,1 +1,965 @@
-function _0xdc54(_0x4bb209,_0x4d2a82){const _0x112e6c=_0x1c72();return _0xdc54=function(_0x5d5a6f,_0x566669){_0x5d5a6f=_0x5d5a6f-0x142;let _0x11b983=_0x112e6c[_0x5d5a6f];return _0x11b983;},_0xdc54(_0x4bb209,_0x4d2a82);}(function(_0x5d2e7e,_0x43b6e5){const _0x470ff8=_0xdc54,_0x5b6d30=_0x5d2e7e();while(!![]){try{const _0x151645=parseInt(_0x470ff8(0x159))/0x1+-parseInt(_0x470ff8(0x14b))/0x2+parseInt(_0x470ff8(0x15b))/0x3+parseInt(_0x470ff8(0x202))/0x4+-parseInt(_0x470ff8(0x170))/0x5+-parseInt(_0x470ff8(0x1fb))/0x6+parseInt(_0x470ff8(0x152))/0x7;if(_0x151645===_0x43b6e5)break;else _0x5b6d30['push'](_0x5b6d30['shift']());}catch(_0xc7b1e7){_0x5b6d30['push'](_0x5b6d30['shift']());}}}(_0x1c72,0xb7e55));function _0x1c72(){const _0x34a063=['8630346BnmmIg','touches','click','includes','prefix','lvl','innerHTML','2588756KodQNw','height','INPUT','width','Zwój\x20teleportacji\x20na\x20Kwieciste\x20Przejście','start','loc','css','testowy','input','buttonSell','settings','attack','createDiv','Wpisz\x20co\x20sellać\x20rozdzielone\x20`,`','left','addEventListener','parseInput','add','Włącz!','splice','exception','71866foUYxu','block','IEMobile','walk','style','init','localStorage','11207245jiYqqE','addPointNeighbours','values','TEXTAREA','indexOf','length','createElement','406191qomPAZ','set','1435089ilyjwZ','buttonExp','expMaps','lock','offsetLeft','kamiloBot','end','Nie\x20znaleziono\x20w\x20torbie\x20tp\x20na\x20mape\x20','attackE2','keys','undefined','goToDoor','shopTransaction','exp','moveitem&id=','neighbours','pageY','appendChild','sleep','selectHeros','talk','4526085ywAhgQ','split','stringify','selectE2','tpMap','interface','parseCollisions','bind','mchar_id','charAt','talk&id=','hasGMPermissions','apply','expBack','start_y','Błędny\x20setup!','querySelector','touchend','talkToNpc','__proto__','touchstart','log','teleport=','Przepuść\x20mnie','div','&st=1','previous','bestMob','amountMix','red','Gotowy\x20do\x20użycia\x20za','getItem','npcdialog','closedSet','fight&a=attack&ff=1&id=-','draggable','message','none','sqrt','Mapy\x20dojściowe','innerHeight','target','lime','Engine','del','Wyłącz!','name','selling','user_id','realDist','buttonE2','display','start_x','collision','get','default','item','gwIds','hasOwnProperty','additionalCollisions','findingHeros','e2Mob','addNeighbours','search','tagName','Mapy\x20do\x20expienia','toString','goBackE2','settingsBot','(((.+)+)+)+$','entries','collisions','shopCloseDelay','info','filter','drag','getLowestF','top','fake','head','getList','pageX','stat','loadQueue','getCookie','openSet','ktj_click','#replies.replies\x20li','map','sellProcess','push','hce','offsetWidth','reconstructPath','npcArr','shop','buttonBack','moveitem&st=1&id=','0px','beginning','toSellArr','console','offsetHeight','touchmove','value','shopAcceptDelay','npc','innerWidth','getVal','mouseup','ondragstart','remove','backE2Maps','findBestMob','orientation','list','forEach','anotherFindPath','botPos','road','find','setVal','searchPath','#lagmeter','trace','userAgent','constructor','getCordsOfNextGw','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#mainMenu\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20500px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20grey;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x209999;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20#mainMenu\x20button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20#mainMenu\x20select\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20#expMaps\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20#sellFilter\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20180px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resize:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20#amountMix\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20grid;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-template-columns:\x201fr\x201fr\x201fr\x201fr;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-template-rows:\x201fr\x201.6fr\x200.4fr\x201fr\x201fr;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x200px\x200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-auto-flow:\x20row;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-template-areas:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22.\x20title\x20title\x20.\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22button1\x20button1\x20button2\x20button2\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22areaButton1\x20areaButton1\x20areaButton2\x20areaButton2\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22areaButton1\x20areaButton1\x20areaButton2\x20areaButton2\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22sth1\x20sth1\x20sth2\x20sth2\x22;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.title\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-area:\x20title;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sth1\x20{\x20grid-area:\x20sth1;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.button1\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-area:\x20button1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.button2\x20{\x20grid-area:\x20button2;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.areaButton1\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-area:\x20areaButton1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.areaButton2\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20grid-area:\x20areaButton2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sth2\x20{\x20grid-area:\x20sth2;\x20}\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20','body','color','textContent','delay','change','buttonHeros','setItem','Znajdujesz\x20sie\x20juz\x20na\x20mapie\x20','table','mainMenu'];_0x1c72=function(){return _0x34a063;};return _0x1c72();}const _0x3a3773=function(){let _0x240031=!![];return function(_0x1c3fc4,_0x9cf02d){const _0xdfdebf=_0x240031?function(){const _0x1f9702=_0xdc54;if(_0x9cf02d){const _0x5ed770=_0x9cf02d[_0x1f9702(0x17c)](_0x1c3fc4,arguments);return _0x9cf02d=null,_0x5ed770;}}:function(){};return _0x240031=![],_0xdfdebf;};}(),_0x2b3c94=_0x3a3773(this,function(){const _0x4de713=_0xdc54;return _0x2b3c94[_0x4de713(0x1b2)]()[_0x4de713(0x1af)](_0x4de713(0x1b5))[_0x4de713(0x1b2)]()['constructor'](_0x2b3c94)[_0x4de713(0x1af)](_0x4de713(0x1b5));});_0x2b3c94();const _0x566669=function(){let _0x4b75d6=!![];return function(_0x32b827,_0x148f78){const _0x8cd602=_0x4b75d6?function(){const _0x54c4c5=_0xdc54;if(_0x148f78){const _0x4c6dd3=_0x148f78[_0x54c4c5(0x17c)](_0x32b827,arguments);return _0x148f78=null,_0x4c6dd3;}}:function(){};return _0x4b75d6=![],_0x8cd602;};}(),_0x5d5a6f=_0x566669(this,function(){const _0x3a46ed=_0xdc54;let _0x3b290e;try{const _0x3602ef=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x3b290e=_0x3602ef();}catch(_0x1af41f){_0x3b290e=window;}const _0x482928=_0x3b290e[_0x3a46ed(0x1d5)]=_0x3b290e[_0x3a46ed(0x1d5)]||{},_0x16cf7b=[_0x3a46ed(0x185),'warn',_0x3a46ed(0x1b9),'error',_0x3a46ed(0x14a),_0x3a46ed(0x1f9),_0x3a46ed(0x1ec)];for(let _0x582d07=0x0;_0x582d07<_0x16cf7b[_0x3a46ed(0x157)];_0x582d07++){const _0x4a82ce=_0x566669[_0x3a46ed(0x1ee)]['prototype'][_0x3a46ed(0x177)](_0x566669),_0x3c1284=_0x16cf7b[_0x582d07],_0x3aa07d=_0x482928[_0x3c1284]||_0x4a82ce;_0x4a82ce[_0x3a46ed(0x183)]=_0x566669['bind'](_0x566669),_0x4a82ce['toString']=_0x3aa07d['toString']['bind'](_0x3aa07d),_0x482928[_0x3c1284]=_0x4a82ce;}});_0x5d5a6f(),(()=>{'use strict';const _0x140d71=_0xdc54;class _0xa28cd6{constructor(_0x24aa24,_0x3c9bb8,_0x5b525a,_0x1d47a0,_0x9453dd,_0x7e9116){const _0x36cc50=_0xdc54;this['width']=_0x3c9bb8,this[_0x36cc50(0x203)]=_0x5b525a,this[_0x36cc50(0x1b7)]=this[_0x36cc50(0x176)](_0x24aa24,_0x3c9bb8,_0x5b525a),this[_0x36cc50(0x1ab)]=_0x7e9116||{},this[_0x36cc50(0x207)]=this[_0x36cc50(0x1b7)][_0x1d47a0['x']][_0x1d47a0['y']],this[_0x36cc50(0x161)]=this[_0x36cc50(0x1b7)][_0x9453dd['x']][_0x9453dd['y']],this[_0x36cc50(0x207)][_0x36cc50(0x1d3)]=!![],this[_0x36cc50(0x207)]['g']=0x0,this[_0x36cc50(0x207)]['f']=_0x4caf9c(this['start'],this[_0x36cc50(0x161)]),this[_0x36cc50(0x161)][_0x36cc50(0x199)]=!![],this['end']['g']=0x0,this[_0x36cc50(0x1ae)](),this['openSet']=[],this[_0x36cc50(0x191)]=[],this['openSet'][_0x36cc50(0x1ca)](this[_0x36cc50(0x207)]);}[_0x140d71(0x176)](_0x5c15ce,_0x203bd9,_0x422be6){const _0x46de0d=_0x140d71,_0x592f57=new Array(_0x203bd9);for(let _0x3f80d9=0x0;_0x3f80d9<_0x203bd9;_0x3f80d9++){_0x592f57[_0x3f80d9]=new Array(_0x422be6);for(let _0x54fdb9=0x0;_0x54fdb9<_0x422be6;_0x54fdb9++){_0x592f57[_0x3f80d9][_0x54fdb9]=new _0x7a98b7(_0x3f80d9,_0x54fdb9,_0x5c15ce[_0x46de0d(0x179)](_0x3f80d9+_0x54fdb9*_0x203bd9)==='1');}}return _0x592f57;}[_0x140d71(0x1ae)](){const _0x405d39=_0x140d71;for(let _0x59b11=0x0;_0x59b11<this['width'];_0x59b11++){for(let _0x496b5e=0x0;_0x496b5e<this[_0x405d39(0x203)];_0x496b5e++){this[_0x405d39(0x153)](this[_0x405d39(0x1b7)][_0x59b11][_0x496b5e]);}}}[_0x140d71(0x153)](_0x37b056){const _0x35809c=_0x140d71,_0x16fcec=_0x37b056['x'],_0x23a582=_0x37b056['y'],_0x17e0c7=[];if(_0x16fcec>0x0)_0x17e0c7[_0x35809c(0x1ca)](this[_0x35809c(0x1b7)][_0x16fcec-0x1][_0x23a582]);if(_0x23a582>0x0)_0x17e0c7['push'](this[_0x35809c(0x1b7)][_0x16fcec][_0x23a582-0x1]);if(_0x16fcec<this[_0x35809c(0x205)]-0x1)_0x17e0c7[_0x35809c(0x1ca)](this[_0x35809c(0x1b7)][_0x16fcec+0x1][_0x23a582]);if(_0x23a582<this[_0x35809c(0x203)]-0x1)_0x17e0c7[_0x35809c(0x1ca)](this[_0x35809c(0x1b7)][_0x16fcec][_0x23a582+0x1]);_0x37b056['neighbours']=_0x17e0c7;}[_0x140d71(0x1e5)](){const _0x201bee=_0x140d71;while(this[_0x201bee(0x1c5)][_0x201bee(0x157)]>0x0){let _0x4da3ca=this[_0x201bee(0x1bc)](),_0xadfa66=this[_0x201bee(0x1c5)][_0x4da3ca];if(_0xadfa66===this[_0x201bee(0x161)])return this[_0x201bee(0x1cd)]();else{this[_0x201bee(0x1c5)]['splice'](_0x4da3ca,0x1),this[_0x201bee(0x191)]['push'](_0xadfa66);for(const _0x463b88 of _0xadfa66[_0x201bee(0x16a)]){if(this[_0x201bee(0x191)][_0x201bee(0x1fe)](_0x463b88))continue;else{const _0x2c38b8=_0xadfa66['g']+0x1;let _0x30085f=![];if(this['end']==this[_0x201bee(0x1b7)][_0x463b88['x']][_0x463b88['y']]||!this[_0x201bee(0x1c5)][_0x201bee(0x1fe)](_0x463b88)&&!_0x463b88[_0x201bee(0x1a5)]&&!this[_0x201bee(0x1ab)][_0x463b88['x']+0x100*_0x463b88['y']])this[_0x201bee(0x1c5)][_0x201bee(0x1ca)](_0x463b88),_0x463b88['h']=_0x4caf9c(_0x463b88,this[_0x201bee(0x161)]),_0x30085f=!![];else _0x2c38b8<_0x463b88['g']&&!_0x463b88[_0x201bee(0x1a5)]&&(_0x30085f=!![]);_0x30085f&&(_0x463b88[_0x201bee(0x18a)]=_0xadfa66,_0x463b88['g']=_0x2c38b8,_0x463b88['f']=_0x463b88['g']+_0x463b88['h']);}}}}}[_0x140d71(0x1bc)](){const _0x509e2c=_0x140d71;let _0x59490d=0x0;for(let _0x3f05d1=0x0;_0x3f05d1<this[_0x509e2c(0x1c5)][_0x509e2c(0x157)];_0x3f05d1++){if(this[_0x509e2c(0x1c5)][_0x3f05d1]['f']<this['openSet'][_0x59490d]['f'])_0x59490d=_0x3f05d1;}return _0x59490d;}[_0x140d71(0x1cd)](){const _0x41017b=_0x140d71,_0x54a35a=[];let _0x3a9a68=this['end'];while(_0x3a9a68!==this[_0x41017b(0x207)]){_0x54a35a[_0x41017b(0x1ca)](_0x3a9a68),_0x3a9a68=_0x3a9a68[_0x41017b(0x18a)];}return _0x54a35a;}}class _0x7a98b7{constructor(_0x4a6d84,_0x6e1798,_0x3d51ba){const _0x1dff77=_0x140d71;this['x']=_0x4a6d84,this['y']=_0x6e1798,this[_0x1dff77(0x1a5)]=_0x3d51ba,this['g']=0x989680,this['f']=0x989680,this[_0x1dff77(0x16a)]=[],this[_0x1dff77(0x1d3)]=![],this[_0x1dff77(0x199)]=![],this[_0x1dff77(0x18a)]=undefined;}}const _0x4caf9c=(_0x550058,_0x2fde78)=>{return Math['abs'](_0x550058['x']-_0x2fde78['x'])+Math['abs'](_0x550058['y']-_0x2fde78['y']);},_0x2a8e84=(_0x2afefb,_0x188ebb)=>{return new _0xa28cd6(map['col'],map['x'],map['y'],{'x':hero['x'],'y':hero['y']},{'x':_0x2afefb,'y':_0x188ebb},g['npccol'])['anotherFindPath']();};typeof unsafeWindow!==_0x140d71(0x165)&&(window=unsafeWindow);const _0x18f6b7=new class{constructor(){const _0x28c6c1=_0x140d71;this['hasGMPermissions']=typeof GM_getValue!==_0x28c6c1(0x165)&&typeof GM_setValue!==_0x28c6c1(0x165),this[_0x28c6c1(0x1dc)]=!this[_0x28c6c1(0x17b)]?window[_0x28c6c1(0x151)][_0x28c6c1(0x18f)][_0x28c6c1(0x177)](window[_0x28c6c1(0x151)]):GM_getValue,this[_0x28c6c1(0x1e9)]=!this[_0x28c6c1(0x17b)]?window[_0x28c6c1(0x151)][_0x28c6c1(0x1f7)][_0x28c6c1(0x177)](window[_0x28c6c1(0x151)]):GM_setValue,this['prefix']=window[_0x28c6c1(0x1c4)](_0x28c6c1(0x1a0))+'|'+window[_0x28c6c1(0x1c4)](_0x28c6c1(0x178));}['get'](_0x9962cb,_0x49d7aa){const _0x448d8b=_0x140d71;let _0x135b5b=this[_0x448d8b(0x1dc)](this[_0x448d8b(0x1ff)]+'|'+_0x9962cb,_0x49d7aa);try{return _0x135b5b!==null?JSON['parse'](_0x135b5b):_0x49d7aa;}catch(_0x5c57fd){return _0x135b5b!==null?_0x135b5b:_0x49d7aa;}}[_0x140d71(0x15a)](_0x4920db,_0x5dbc56){const _0x534182=_0x140d71;return this[_0x534182(0x1e9)](this[_0x534182(0x1ff)]+'|'+_0x4920db,_0x5dbc56),_0x5dbc56;}}(),_0x4c2820=window['getCookie'](_0x140d71(0x175))==='si',_0x8931e5=_0x5d7348=>{const _0x23383b=_0x140d71,_0x4cf4d5=_0x4c2820?window[_0x23383b(0x1c8)]:window[_0x23383b(0x19b)]['map']?.['d'];if(!_0x5d7348[_0x23383b(0x1fe)](_0x4cf4d5['id']))return![];let _0x491d9c=_0x18f6b7['get']('currIndex',0x0);while(_0x5d7348[_0x491d9c]!==_0x4cf4d5['id']){_0x491d9c++,_0x491d9c>=_0x5d7348['length']&&(_0x491d9c=0x0);}_0x18f6b7[_0x23383b(0x15a)]('currIndex',_0x491d9c);const _0x22eb66=_0x491d9c===_0x5d7348[_0x23383b(0x157)]-0x1?_0x5d7348[_0x5d7348[_0x23383b(0x157)]-0x1]===_0x5d7348[0x0]?_0x5d7348[0x1]:_0x5d7348[0x0]:_0x5d7348[++_0x491d9c];if(!_0x22eb66)return![];const _0x570c1b=_0x4c2820?window['g'][_0x23383b(0x1a9)][_0x22eb66]?.[_0x23383b(0x171)]('.')[_0x23383b(0x1c8)](_0x5e2a49=>parseInt(_0x5e2a49)):Engine[_0x23383b(0x1c8)]['gateways'][_0x23383b(0x1c0)]()[_0x23383b(0x1e8)](_0x495b1b=>_0x495b1b['d']['id']===_0x22eb66)['d'];if(!_0x570c1b)return![];return _0x4c2820?{'x':_0x570c1b[0x0],'y':_0x570c1b[0x1]}:{'x':_0x570c1b['x'],'y':_0x570c1b['y']};};window[_0x140d71(0x1ef)]=_0x8931e5,window[_0x140d71(0x160)]=new class{constructor(){const _0x59e8c5=_0x140d71;this['id']=window['getCookie']('user_id'),this[_0x59e8c5(0x1ad)],this['bestMob'],this[_0x59e8c5(0x1ce)]=[],this['itemArr']=[],this[_0x59e8c5(0x20d)]=_0x18f6b7[_0x59e8c5(0x1a6)](_0x59e8c5(0x1b4))?_0x18f6b7[_0x59e8c5(0x1a6)](_0x59e8c5(0x1b4)):{'buttonE2':_0x59e8c5(0x148),'selectE2':'default','setupy':_0x59e8c5(0x1a7),'expMaps':[_0x59e8c5(0x1b1)],'expBack':[_0x59e8c5(0x197)],'backE2Maps':[],'buttonExp':'Włącz!','buttonBack':_0x59e8c5(0x148),'buttonHeros':'Włącz!','buttonSell':_0x59e8c5(0x148),'selectHeros':_0x59e8c5(0x1a7),'delay':0x1f4,'toSellArr':_0x59e8c5(0x143),'display':'block','amountMix':0xa};}[_0x140d71(0x142)](){const _0x5e4bad=_0x140d71,_0x356bad=document[_0x5e4bad(0x158)](_0x5e4bad(0x188)),_0x4906ab=_0x18f6b7[_0x5e4bad(0x1a6)](_0x5e4bad(0x1e6))?_0x18f6b7[_0x5e4bad(0x1a6)](_0x5e4bad(0x1e6)):[_0x5e4bad(0x1d2),_0x5e4bad(0x1d2)];_0x356bad['id']=_0x5e4bad(0x1fa),_0x356bad[_0x5e4bad(0x201)]+='\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22title\x22><span\x20id=\x22labelInfo\x22>KamiloBot</span></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sth1\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22button1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Elity\x20II</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22selectE2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22default\x22\x20disabled>Wybierz\x20E2</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22Goplana\x22>Goplana\x2075lvl</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22Foverk\x20Turrim\x22>Foverk\x20Turrim\x2057lvl</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22buttonE2\x22></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22button2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Mapy\x20dojściowe:\x20</span>\x20<input\x20type=\x22text\x22\x20id=\x22expBack\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Mapy:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22expMaps\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Setupy:\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22setupy\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22default\x22\x20disabled>Wybierz\x20Setup</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22testowy\x22>Testowy\x20setup</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22testowy2\x22>Testowy\x20setup2</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22buttonExp\x22></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22areaButton1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>Herosi:\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22heros\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22default\x22\x20disabled>Wybierz\x20herosa</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22przewo\x22>Zły\x20przewodnik\x2063lvl</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22kostek\x22>Piekielny\x20kościej\x2074lvl</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22buttonHeros\x22></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22areaButton2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Wracanie:\x20<button\x20id=\x22back\x22></button><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Sellanie\x20Tunia:\x20<button\x20id=\x22sell\x22></button><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Co\x20sellać:\x20<textarea\x20id=\x22sellFilter\x22\x20rows=\x225\x22\x20cols=\x2233\x22></textarea><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Ile\x20mixów:\x20<input\x20type=\x22number\x22\x20id=\x22amountMix\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sth2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>',document[_0x5e4bad(0x1f1)][_0x5e4bad(0x16c)](_0x356bad),amountMix[_0x5e4bad(0x1d8)]=this[_0x5e4bad(0x20d)]['amountMix'],amountMix[_0x5e4bad(0x145)]('input',()=>{const _0x58a9a0=_0x5e4bad;this[_0x58a9a0(0x20d)][_0x58a9a0(0x18c)]=amountMix[_0x58a9a0(0x1d8)],_0x18f6b7[_0x58a9a0(0x15a)]('settingsBot',JSON['stringify'](this[_0x58a9a0(0x20d)]));}),buttonE2['textContent']=this[_0x5e4bad(0x20d)][_0x5e4bad(0x1a2)];this[_0x5e4bad(0x20d)][_0x5e4bad(0x1a2)]===_0x5e4bad(0x148)?(this[_0x5e4bad(0x20d)]['buttonE2']='Włącz!',buttonE2[_0x5e4bad(0x14f)][_0x5e4bad(0x1f2)]='red'):(this[_0x5e4bad(0x20d)][_0x5e4bad(0x1a2)]=_0x5e4bad(0x19d),buttonE2['style'][_0x5e4bad(0x1f2)]='lime');buttonE2[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x3221bb=_0x5e4bad;this[_0x3221bb(0x20d)][_0x3221bb(0x1a2)]===_0x3221bb(0x148)?(this[_0x3221bb(0x20d)][_0x3221bb(0x1a2)]='Wyłącz!',buttonE2['style']['color']=_0x3221bb(0x19a)):(this['settings']['buttonE2']=_0x3221bb(0x148),buttonE2[_0x3221bb(0x14f)][_0x3221bb(0x1f2)]=_0x3221bb(0x18d)),buttonE2['textContent']=this[_0x3221bb(0x20d)][_0x3221bb(0x1a2)],_0x18f6b7[_0x3221bb(0x15a)]('settingsBot',JSON['stringify'](this['settings']));}),selectE2[_0x5e4bad(0x1d8)]=this[_0x5e4bad(0x20d)][_0x5e4bad(0x173)],selectE2[_0x5e4bad(0x145)](_0x5e4bad(0x1f5),()=>{const _0x4ea28d=_0x5e4bad;this[_0x4ea28d(0x20d)][_0x4ea28d(0x173)]=selectE2[_0x4ea28d(0x1d8)],_0x18f6b7[_0x4ea28d(0x15a)](_0x4ea28d(0x1b4),JSON['stringify'](this[_0x4ea28d(0x20d)]));switch(selectE2[_0x4ea28d(0x1d8)]){case'Goplana':this[_0x4ea28d(0x20d)]['backE2Maps']=[0x101,0xf6,0xe5,0x1f4,0x2bd,0x471,0x475,0x479,0x47a,0x47b,0x47d,0x47e,0x47f];break;}}),expMaps['value']=this[_0x5e4bad(0x20d)][_0x5e4bad(0x15d)],expMaps[_0x5e4bad(0x145)](_0x5e4bad(0x20b),()=>{const _0x56361b=_0x5e4bad;this[_0x56361b(0x20d)][_0x56361b(0x15d)]=expMaps[_0x56361b(0x1d8)][_0x56361b(0x171)](',')[_0x56361b(0x1c8)](_0x3ad367=>parseInt(_0x3ad367)),_0x18f6b7[_0x56361b(0x15a)](_0x56361b(0x1b4),JSON[_0x56361b(0x172)](this[_0x56361b(0x20d)]));}),buttonExp['textContent']=this[_0x5e4bad(0x20d)][_0x5e4bad(0x15c)];this[_0x5e4bad(0x20d)][_0x5e4bad(0x15c)]===_0x5e4bad(0x148)?(this[_0x5e4bad(0x20d)][_0x5e4bad(0x15c)]=_0x5e4bad(0x148),buttonExp[_0x5e4bad(0x14f)][_0x5e4bad(0x1f2)]=_0x5e4bad(0x18d)):(this['settings'][_0x5e4bad(0x15c)]=_0x5e4bad(0x19d),buttonExp[_0x5e4bad(0x14f)]['color']='lime');buttonExp[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x28af6a=_0x5e4bad;this[_0x28af6a(0x20d)][_0x28af6a(0x15c)]===_0x28af6a(0x148)?(this[_0x28af6a(0x20d)][_0x28af6a(0x15c)]=_0x28af6a(0x19d),buttonExp['style']['color']='lime'):(this[_0x28af6a(0x20d)]['buttonExp']=_0x28af6a(0x148),buttonExp[_0x28af6a(0x14f)][_0x28af6a(0x1f2)]='red'),buttonExp['textContent']=this['settings']['buttonExp'],_0x18f6b7[_0x28af6a(0x15a)](_0x28af6a(0x1b4),JSON[_0x28af6a(0x172)](this[_0x28af6a(0x20d)]));});switch(setupy['value']){case _0x5e4bad(0x20a):this[_0x5e4bad(0x20d)][_0x5e4bad(0x15d)]=[0xaab,0xaac,0xaad,0xaaa,0xaad,0xaac,0xaab,0xaaa],expMaps[_0x5e4bad(0x1d8)]=this[_0x5e4bad(0x20d)]['expMaps'];break;}sell[_0x5e4bad(0x1f3)]=this[_0x5e4bad(0x20d)]['buttonSell'],this['settings']['buttonSell']===_0x5e4bad(0x148)?(this[_0x5e4bad(0x20d)][_0x5e4bad(0x20c)]=_0x5e4bad(0x148),sell[_0x5e4bad(0x14f)][_0x5e4bad(0x1f2)]='red'):(this['settings'][_0x5e4bad(0x20c)]=_0x5e4bad(0x19d),sell[_0x5e4bad(0x14f)][_0x5e4bad(0x1f2)]=_0x5e4bad(0x19a)),sell[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0xf239c1=_0x5e4bad;this[_0xf239c1(0x20d)][_0xf239c1(0x20c)]===_0xf239c1(0x148)?(this[_0xf239c1(0x20d)]['buttonSell']='Wyłącz!',sell[_0xf239c1(0x14f)]['color']=_0xf239c1(0x19a)):(this[_0xf239c1(0x20d)][_0xf239c1(0x20c)]=_0xf239c1(0x148),sell[_0xf239c1(0x14f)][_0xf239c1(0x1f2)]='red'),sell[_0xf239c1(0x1f3)]=this[_0xf239c1(0x20d)]['buttonSell'],_0x18f6b7['set'](_0xf239c1(0x1b4),JSON[_0xf239c1(0x172)](this[_0xf239c1(0x20d)]));}),sellFilter['value']=this[_0x5e4bad(0x20d)][_0x5e4bad(0x1d4)],sellFilter[_0x5e4bad(0x145)](_0x5e4bad(0x20b),()=>{const _0x21f2c1=_0x5e4bad;this['settings'][_0x21f2c1(0x1d4)]=sellFilter[_0x21f2c1(0x1d8)]['split'](','),_0x18f6b7['set'](_0x21f2c1(0x1b4),JSON[_0x21f2c1(0x172)](this['settings']));}),back[_0x5e4bad(0x1f3)]=this[_0x5e4bad(0x20d)][_0x5e4bad(0x1d0)],this['settings'][_0x5e4bad(0x1d0)]===_0x5e4bad(0x148)?(this['settings']['buttonBack']=_0x5e4bad(0x148),back[_0x5e4bad(0x14f)]['color']='red'):(this['settings'][_0x5e4bad(0x1d0)]='Wyłącz!',back['style']['color']='lime'),back[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x1b8b91=_0x5e4bad;this[_0x1b8b91(0x20d)][_0x1b8b91(0x1d0)]===_0x1b8b91(0x148)?(this['settings'][_0x1b8b91(0x1d0)]=_0x1b8b91(0x19d),back[_0x1b8b91(0x14f)][_0x1b8b91(0x1f2)]=_0x1b8b91(0x19a)):(this[_0x1b8b91(0x20d)]['buttonBack']='Włącz!',back['style']['color']=_0x1b8b91(0x18d)),back[_0x1b8b91(0x1f3)]=this[_0x1b8b91(0x20d)][_0x1b8b91(0x1d0)],_0x18f6b7[_0x1b8b91(0x15a)](_0x1b8b91(0x1b4),JSON[_0x1b8b91(0x172)](this[_0x1b8b91(0x20d)]));}),buttonHeros[_0x5e4bad(0x1f3)]=this[_0x5e4bad(0x20d)][_0x5e4bad(0x1f6)],this[_0x5e4bad(0x20d)][_0x5e4bad(0x1f6)]==='Włącz!'?(this[_0x5e4bad(0x20d)]['buttonHeros']=_0x5e4bad(0x148),buttonHeros[_0x5e4bad(0x14f)][_0x5e4bad(0x1f2)]=_0x5e4bad(0x18d)):(this[_0x5e4bad(0x20d)][_0x5e4bad(0x1f6)]=_0x5e4bad(0x19d),buttonHeros[_0x5e4bad(0x14f)]['color']='lime'),buttonHeros[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x526135=_0x5e4bad;this[_0x526135(0x20d)]['buttonHeros']==='Włącz!'?(this['settings'][_0x526135(0x1f6)]='Wyłącz!',buttonHeros[_0x526135(0x14f)][_0x526135(0x1f2)]='lime'):(this[_0x526135(0x20d)][_0x526135(0x1f6)]='Włącz!',buttonHeros[_0x526135(0x14f)][_0x526135(0x1f2)]=_0x526135(0x18d)),buttonHeros[_0x526135(0x1f3)]=this[_0x526135(0x20d)][_0x526135(0x1f6)],_0x18f6b7[_0x526135(0x15a)]('settingsBot',JSON[_0x526135(0x172)](this[_0x526135(0x20d)]));}),heros[_0x5e4bad(0x1d8)]=this[_0x5e4bad(0x20d)][_0x5e4bad(0x16e)],heros['addEventListener'](_0x5e4bad(0x20b),()=>{const _0x3bd148=_0x5e4bad;this[_0x3bd148(0x20d)][_0x3bd148(0x16e)]=heros['value'],_0x18f6b7[_0x3bd148(0x15a)]('settingsBot',JSON['stringify'](this['settings']));}),expBack[_0x5e4bad(0x1d8)]=this[_0x5e4bad(0x20d)]['expBack'],expBack['addEventListener'](_0x5e4bad(0x20b),()=>{const _0x462060=_0x5e4bad;this[_0x462060(0x20d)][_0x462060(0x17d)]=expBack[_0x462060(0x1d8)][_0x462060(0x171)](',')[_0x462060(0x1c8)](_0x43ef78=>parseInt(_0x43ef78)),_0x18f6b7[_0x462060(0x15a)]('settingsBot',JSON[_0x462060(0x172)](this[_0x462060(0x20d)]));}),_0x356bad[_0x5e4bad(0x14f)][_0x5e4bad(0x1a3)]=this[_0x5e4bad(0x20d)][_0x5e4bad(0x1a3)],labelInfo[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x3d7880=_0x5e4bad;this[_0x3d7880(0x20d)]['display']==='none'&&_0x356bad['style'][_0x3d7880(0x1a3)]===_0x3d7880(0x195)?(this[_0x3d7880(0x20d)]['display']=_0x3d7880(0x14c),_0x356bad[_0x3d7880(0x14f)][_0x3d7880(0x1a3)]=_0x3d7880(0x14c)):(this[_0x3d7880(0x20d)][_0x3d7880(0x1a3)]=_0x3d7880(0x195),_0x356bad[_0x3d7880(0x14f)][_0x3d7880(0x1a3)]=_0x3d7880(0x195)),_0x18f6b7[_0x3d7880(0x15a)]('settingsBot',JSON[_0x3d7880(0x172)](this[_0x3d7880(0x20d)]));}),document[_0x5e4bad(0x180)](_0x5e4bad(0x1eb))[_0x5e4bad(0x145)](_0x5e4bad(0x1fd),()=>{const _0x45c458=_0x5e4bad;this['settings'][_0x45c458(0x1a3)]===_0x45c458(0x195)&&_0x356bad[_0x45c458(0x14f)][_0x45c458(0x1a3)]===_0x45c458(0x195)?(this[_0x45c458(0x20d)][_0x45c458(0x1a3)]='block',_0x356bad[_0x45c458(0x14f)][_0x45c458(0x1a3)]='block'):(this[_0x45c458(0x20d)][_0x45c458(0x1a3)]=_0x45c458(0x195),_0x356bad[_0x45c458(0x14f)][_0x45c458(0x1a3)]=_0x45c458(0x195)),_0x18f6b7[_0x45c458(0x15a)](_0x45c458(0x1b4),JSON[_0x45c458(0x172)](this[_0x45c458(0x20d)]));}),this[_0x5e4bad(0x209)](),_0x356bad['style']['left']=_0x4906ab[0x0],_0x356bad[_0x5e4bad(0x14f)][_0x5e4bad(0x1bd)]=_0x4906ab[0x1],this[_0x5e4bad(0x193)](_0x356bad,'botPos');}['css'](){const _0x43fa4e=_0x140d71,_0x367bc5=document['createElement'](_0x43fa4e(0x14f));_0x367bc5[_0x43fa4e(0x201)]=_0x43fa4e(0x1f0),document[_0x43fa4e(0x1bf)][_0x43fa4e(0x16c)](_0x367bc5);}[_0x140d71(0x1ea)](_0x247c23,_0x402dfb){const _0x17247d=_0x140d71;let _0x137fa7=_0x2a8e84(_0x247c23,_0x402dfb);if(!Array['isArray'](_0x137fa7))return;window[_0x17247d(0x1e7)]=_0x137fa7;}[_0x140d71(0x146)](){const _0x5ba272=_0x140d71;(_0x3e7b31=>{const _0x2ffd65=_0xdc54;window[_0x2ffd65(0x146)]=(_0x68435f={},..._0x5e8df7)=>{const _0x5d657c=_0x2ffd65;_0x3e7b31(_0x68435f,..._0x5e8df7);if(_0x68435f[_0x5d657c(0x1aa)](_0x5d657c(0x1da))&&_0x68435f[_0x5d657c(0x1da)]!==undefined)for(const [_0xd60f6b,_0x8eb5ed]of Object['entries'](_0x68435f[_0x5d657c(0x1da)])){_0x8eb5ed['x']&&_0x8eb5ed['y']&&(_0x8eb5ed['realDist']=_0x2a8e84(_0x8eb5ed['x'],_0x8eb5ed['y'])),this[_0x5d657c(0x1ce)][_0xd60f6b]=_0x8eb5ed,this[_0x5d657c(0x1ce)][_0xd60f6b][_0x5d657c(0x19c)]&&delete this[_0x5d657c(0x1ce)][_0xd60f6b];}};})(window[_0x5ba272(0x146)]);}[_0x140d71(0x174)](_0x52c4c4){const _0x53265a=_0x140d71,_0x3fc506=Object[_0x53265a(0x164)](g['item'])['find'](_0x2edf1b=>g[_0x53265a(0x1a8)][_0x2edf1b][_0x53265a(0x1c2)][_0x53265a(0x1fe)](_0x53265a(0x186)+_0x52c4c4+',')&&!g['item'][_0x2edf1b]['tip'][_0x53265a(0x1fe)](_0x53265a(0x18e)));if(!_0x3fc506)return message(_0x53265a(0x162)+_0x52c4c4);else{if(window[_0x53265a(0x1c8)]['id']===_0x52c4c4)return message(_0x53265a(0x1f8)+map[_0x53265a(0x19e)]);}return _g(_0x53265a(0x169)+0x29b47f91+_0x53265a(0x189)),_g(_0x53265a(0x1d1)+_0x3fc506);}[_0x140d71(0x19f)](){(async()=>{const _0x3da950=_0xdc54;while(!![]){if(this[_0x3da950(0x20d)][_0x3da950(0x20c)]===_0x3da950(0x19d))switch(_0x18f6b7['get'](_0x3da950(0x1c9))){case 0x1:window[_0x3da950(0x1c8)]['id']!==0x158?this[_0x3da950(0x174)](0x158):_0x18f6b7[_0x3da950(0x15a)](_0x3da950(0x1c9),0x2);break;case 0x2:if(window['map']['id']===0x158)this[_0x3da950(0x166)](0x161);else{if(!g[_0x3da950(0x15e)][_0x3da950(0x1e3)][0x0])this[_0x3da950(0x182)](0x3fee);else{if(g[_0x3da950(0x15e)][_0x3da950(0x1e3)][0x0]===_0x3da950(0x190))this['clickText']('Pokaż\x20mi,\x20');else g['lock']['list'][0x0]==='shop'&&this['shopTransaction']('Pomarańczowa\x20mikstura',this[_0x3da950(0x20d)][_0x3da950(0x18c)]);}}break;case 0x3:(g[_0x3da950(0x15e)]['list'][0x0]!==_0x3da950(0x190)||g[_0x3da950(0x15e)]['list'][0x0]!==_0x3da950(0x1cf))&&this['goToDoor'](0x158);break;}await this[_0x3da950(0x16d)](0x5dc);}})();}[_0x140d71(0x1d9)](){shop_accept();}[_0x140d71(0x1b8)](){shop_close();}async[_0x140d71(0x167)](_0x186fd1,_0x5a427d,_0x172d75){const _0x3acfcd=_0x140d71,_0x4842c2=Object['values'](g[_0x3acfcd(0x1a8)])[_0x3acfcd(0x1ba)](_0x4a7113=>_0x4a7113['name']===_0x3acfcd(0x206))[_0x3acfcd(0x157)],_0x14a666=Object[_0x3acfcd(0x154)](g[_0x3acfcd(0x1a8)])[_0x3acfcd(0x1ba)](_0x54ca09=>_0x54ca09['name']===_0x186fd1)[_0x3acfcd(0x157)],_0x1b4cf1=Object[_0x3acfcd(0x154)](g['item'])[_0x3acfcd(0x1e8)](_0x5ace7f=>_0x5ace7f[_0x3acfcd(0x208)]==='n'&&_0x5ace7f[_0x3acfcd(0x19e)]===_0x186fd1);_0x14a666<=this[_0x3acfcd(0x20d)][_0x3acfcd(0x18c)]&&g['shop']['b'][_0x3acfcd(0x157)]<=0x0&&_0x1b4cf1&&g[_0x3acfcd(0x1cf)]['b']['push']({'id':_0x1b4cf1['id'],'q':_0x5a427d});const _0x2d8db2=Object[_0x3acfcd(0x154)](g[_0x3acfcd(0x1a8)])['filter'](_0x4890bf=>this[_0x3acfcd(0x20d)]['toSellArr'][_0x3acfcd(0x1fe)](_0x4890bf[_0x3acfcd(0x19e)])&&_0x4890bf[_0x3acfcd(0x208)]==='g')[_0x3acfcd(0x1c8)](_0x55eafb=>_0x55eafb['id']);_0x2d8db2[_0x3acfcd(0x1e4)]((_0x4557fc,_0x9b4e3d)=>{const _0x3824df=_0x3acfcd;!g[_0x3824df(0x1cf)]['s']['includes'](_0x2d8db2[_0x9b4e3d])&&(g[_0x3824df(0x1cf)]['s'][_0x3824df(0x1ca)](_0x2d8db2[_0x9b4e3d]),_0x2d8db2[_0x3824df(0x149)](_0x9b4e3d,0x1));}),(g[_0x3acfcd(0x1cf)]['b'][_0x3acfcd(0x157)]===0x1||_0x2d8db2[_0x3acfcd(0x157)]>0x0)&&(await this[_0x3acfcd(0x16d)](0x3e8),this[_0x3acfcd(0x1d9)]()),_0x14a666>=0x5&&!_0x2d8db2[_0x3acfcd(0x157)]&&(await this['sleep'](0xbb8),this[_0x3acfcd(0x1b8)](),_0x18f6b7[_0x3acfcd(0x15a)](_0x3acfcd(0x1c9),0x3));}[_0x140d71(0x166)](_0x5d4a48){const _0x502301=_0x140d71;for(const _0x5456e7 of Object[_0x502301(0x1b6)](g[_0x502301(0x1a9)])){const _0x5b668a=_0x5456e7[0x0],_0x3343e4=_0x5456e7[0x1][_0x502301(0x171)]('.')[_0x502301(0x1c8)](_0x2a8af2=>{return parseInt(_0x2a8af2);}),_0x200542={'x':_0x3343e4[0x0],'y':_0x3343e4[0x1]};if(_0x5d4a48==_0x5b668a)return!map[_0x502301(0x1cb)](_0x200542,hero)&&_g(_0x502301(0x14e)),this[_0x502301(0x1ea)](_0x200542['x'],_0x200542['y']),!![];}return![];}[_0x140d71(0x1e1)](_0x2a0eaa,_0x52780a){const _0x516308=_0x140d71;return this[_0x516308(0x1ce)]['filter'](_0x464b90=>_0x464b90[_0x516308(0x200)]>=_0x2a0eaa&&_0x464b90['lvl']<=_0x52780a&&!_0x464b90['walkover']&&_0x464b90['realDist'])?.['sort']((_0x419cbf,_0x130969)=>{const _0x4810e4=_0x516308,_0x429a99=_0x419cbf[_0x4810e4(0x1a1)],_0x394b30=_0x130969[_0x4810e4(0x1a1)];return _0x429a99>_0x394b30?0x1:_0x429a99===_0x394b30?0x0:-0x1;})[0x0];}['handlerE2'](){const _0x3920f1=_0x140d71;for(const _0x2ab16f of Object[_0x3920f1(0x154)](g['npc'])){_0x2ab16f['wt']>0x13&&_0x2ab16f['wt']>0x4e&&_0x2ab16f[_0x3920f1(0x1be)]!==!![]&&(this[_0x3920f1(0x1ad)]=_0x2ab16f);}return this[_0x3920f1(0x1ad)];}['attack'](_0x214844){const _0xe3fc52=_0x140d71;Math[_0xe3fc52(0x196)]((_0x214844['x']-hero['x'])**0x2+(_0x214844['y']-hero['y'])**0x2)<=0x1&&_g(_0xe3fc52(0x192)+_0x214844['id']);}[_0x140d71(0x168)](){(async()=>{const _0x3e8436=_0xdc54;while(!![]){if(this[_0x3e8436(0x20d)][_0x3e8436(0x15c)]===_0x3e8436(0x19d)){const _0x416571=window[_0x3e8436(0x1ef)](this['settings'][_0x3e8436(0x15d)]);if(!this[_0x3e8436(0x18b)]&&_0x416571||this[_0x3e8436(0x18b)]['realDist']<this[_0x3e8436(0x1e1)](0x28,0x32)[_0x3e8436(0x1a1)])this[_0x3e8436(0x18b)]=this['findBestMob'](0x28,0x32);else{if(_0x416571&&!(this[_0x3e8436(0x18b)]['id']in this[_0x3e8436(0x1ce)]))delete this[_0x3e8436(0x18b)];else _0x416571&&this['bestMob']['id']&&this[_0x3e8436(0x20e)](this[_0x3e8436(0x18b)]);}if(this[_0x3e8436(0x18b)])this['searchPath'](this['bestMob']['x'],this[_0x3e8436(0x18b)]['y']);else{if(!this[_0x3e8436(0x18b)]&&_0x416571){if(!this[_0x3e8436(0x1e1)](0x28,0x32))this['searchPath'](_0x416571['x'],_0x416571['y']);}else!_0x416571&&this[_0x3e8436(0x166)](this[_0x3e8436(0x20d)][_0x3e8436(0x17d)][this[_0x3e8436(0x20d)]['expBack']['indexOf'](map['id'])+0x1]);}!_0x416571&&!this[_0x3e8436(0x20d)][_0x3e8436(0x17d)][_0x3e8436(0x1fe)](map['id'])&&window[_0x3e8436(0x194)](_0x3e8436(0x17f));}await this[_0x3e8436(0x16d)](this['settings']['delay']);}})();}[_0x140d71(0x163)](){(async()=>{const _0x196790=_0xdc54;while(!![]){if(this['settings'][_0x196790(0x1a2)]===_0x196790(0x19d)){if(!this[_0x196790(0x1ad)])this[_0x196790(0x1ad)]=this['handlerE2']();else!(this[_0x196790(0x1ad)]['id']in g[_0x196790(0x1da)])?delete this[_0x196790(0x1ad)]:(this[_0x196790(0x20e)](this[_0x196790(0x1ad)]),await this[_0x196790(0x16d)](0x5dc));this[_0x196790(0x1ad)]&&this[_0x196790(0x1ea)](e2Mob['x'],e2Mob['y']);}await this[_0x196790(0x16d)](this[_0x196790(0x20d)][_0x196790(0x1f4)]);}})();}[_0x140d71(0x1b3)](){(async()=>{const _0x174159=_0xdc54;while(!![]){if(this['settings']['buttonBack']===_0x174159(0x19d)){this['goToDoor'](this[_0x174159(0x20d)][_0x174159(0x1e0)][this[_0x174159(0x20d)][_0x174159(0x1e0)][_0x174159(0x156)](map['id'])+0x1]);switch(map['id']){case 0x47d:this[_0x174159(0x182)](0x27af0),this['clickText'](_0x174159(0x187));break;}}await this[_0x174159(0x16d)](0x5dc);}})();}['findingHeros'](){const _0x4add76={0x74:[{'x':0x23,'y':0x3}],0xaaa:[{'x':0x30,'y':0xb},{'x':0x21,'y':0x3c}],0x74:[{'x':0x19,'y':0x39}]},_0x54a578={0x74:[],0xaaa:[]},_0x23bb63=[0x1,0x8,0x74,0xaaa,0x74];(async()=>{const _0x174683=_0xdc54;while(!![]){if(this['settings'][_0x174683(0x1f6)]===_0x174683(0x19d)){if(_0x4add76['hasOwnProperty'](map['id']))for(const [_0x6ec220,_0x17ca8d]of Object['entries'](_0x4add76[map['id']])){_0x17ca8d['x']===hero['x']&&_0x17ca8d['y']===hero['y']&&_0x54a578[map['id']][_0x174683(0x157)]<_0x4add76[map['id']]['length']&&_0x54a578[map['id']][_0x174683(0x1ca)]({'x':_0x17ca8d['x'],'y':_0x17ca8d['y']});let _0x2ce982=![];for(const [_0x2914b1,_0x15343e]of Object[_0x174683(0x1b6)](_0x54a578[map['id']])){if(_0x15343e['x']===_0x17ca8d['x']&&_0x15343e['y']===_0x17ca8d['y']){_0x2ce982=!![];break;}}if(_0x2ce982)continue;kamiloBot[_0x174683(0x1ea)](_0x17ca8d['x'],_0x17ca8d['y']);}if(!_0x4add76[_0x174683(0x1aa)](map['id'])){const _0x4eb6ae=window[_0x174683(0x1ef)](_0x23bb63);this[_0x174683(0x1ea)](_0x4eb6ae['x'],_0x4eb6ae['y']);}}await this[_0x174683(0x16d)](0x5dc);}})();}[_0x140d71(0x182)](_0x1df111){const _0x9428f5=_0x140d71,_0x531621=g[_0x9428f5(0x1da)][_0x1df111];if(!_0x531621)return![];return map['hce'](hero,_0x531621)>0x1?(this[_0x9428f5(0x1ea)](_0x531621['x'],_0x531621['y']),!![]):(_g(_0x9428f5(0x17a)+_0x531621['id']),!![]);}['clickText'](_0x121692){const _0x267241=_0x140d71,_0x404af3=dialog['querySelectorAll'](_0x267241(0x1c7));if(!g[_0x267241(0x16f)]['id']||!_0x404af3[_0x267241(0x157)])return![];_0x404af3[_0x267241(0x1e4)]((_0x1e334d,_0x892959)=>{const _0x5f52b4=_0x267241;if(_0x1e334d[_0x5f52b4(0x1f3)][_0x5f52b4(0x1fe)](_0x121692))return _0x404af3[_0x892959][_0x5f52b4(0x1fd)](),!![];});}[_0x140d71(0x16d)](_0x4196ca){return new Promise(_0x2ab62e=>setTimeout(_0x2ab62e,_0x4196ca));}[_0x140d71(0x150)](){const _0x915682=_0x140d71;window['bB']=()=>{},this[_0x915682(0x142)](),this[_0x915682(0x168)](),this[_0x915682(0x1b3)](),this[_0x915682(0x163)](),this[_0x915682(0x19f)](),this[_0x915682(0x1ac)]();}['draggable'](_0x4c4f8d,_0x2448b0){const _0x52752e=_0x140d71,_0x26bdc6=this,_0x14cca2=_0x52752e(0x165)!=typeof window[_0x52752e(0x1e2)]||-0x1!==navigator[_0x52752e(0x1ed)][_0x52752e(0x156)](_0x52752e(0x14d));_0x4c4f8d[_0x52752e(0x1de)]=()=>{},_0x4c4f8d[_0x52752e(0x145)](_0x14cca2?_0x52752e(0x184):'mousedown',_0x25529d=>{const _0x5a593b=_0x52752e;window['g'][_0x5a593b(0x15e)][_0x5a593b(0x147)](_0x5a593b(0x1c6)),[_0x5a593b(0x204),_0x5a593b(0x155)]['includes'](_0x25529d[_0x5a593b(0x199)][_0x5a593b(0x1b0)])||(_0x26bdc6['drag']=!0x0,_0x14cca2&&(_0x26bdc6['x']=_0x25529d['touches'][0x0][_0x5a593b(0x1c1)],_0x26bdc6['y']=_0x25529d[_0x5a593b(0x1fc)][0x0][_0x5a593b(0x16b)]),_0x26bdc6[_0x5a593b(0x1a4)]=_0x26bdc6['x']-_0x4c4f8d[_0x5a593b(0x15f)],_0x26bdc6[_0x5a593b(0x17e)]=_0x26bdc6['y']-_0x4c4f8d['offsetTop']);}),document[_0x52752e(0x145)](_0x14cca2?_0x52752e(0x1d7):'mousemove',_0x3333e1=>{const _0x5c94b0=_0x52752e;if(_0x3333e1[_0x5c94b0(0x1c1)]&&(_0x26bdc6['x']=_0x3333e1[_0x5c94b0(0x1c1)],_0x26bdc6['y']=_0x3333e1['pageY']),_0x14cca2&&(_0x26bdc6['x']=_0x3333e1[_0x5c94b0(0x1fc)][0x0][_0x5c94b0(0x1c1)],_0x26bdc6['y']=_0x3333e1[_0x5c94b0(0x1fc)][0x0][_0x5c94b0(0x16b)]),_0x26bdc6[_0x5c94b0(0x1bb)]){let _0x23bd29=_0x4c4f8d[_0x5c94b0(0x1cc)],_0x1c78fc=_0x4c4f8d[_0x5c94b0(0x1d6)],_0x46573e=_0x26bdc6['x']-_0x26bdc6[_0x5c94b0(0x1a4)],_0x2745c9=_0x26bdc6['y']-_0x26bdc6[_0x5c94b0(0x17e)];0x0>_0x46573e&&(_0x46573e=0x0),_0x46573e+_0x23bd29>window[_0x5c94b0(0x1db)]&&(_0x46573e=window[_0x5c94b0(0x1db)]-_0x23bd29),_0x4c4f8d[_0x5c94b0(0x14f)][_0x5c94b0(0x144)]=_0x46573e+'px',0x0>_0x2745c9&&(_0x2745c9=0x0),_0x2745c9+_0x1c78fc>window[_0x5c94b0(0x198)]&&(_0x2745c9=window['innerHeight']-_0x1c78fc),_0x4c4f8d[_0x5c94b0(0x14f)]['top']=_0x2745c9+'px';}}),document[_0x52752e(0x145)](_0x14cca2?_0x52752e(0x181):_0x52752e(0x1dd),()=>{const _0x2be4aa=_0x52752e;window['g'][_0x2be4aa(0x15e)][_0x2be4aa(0x1df)]('ktj_click'),_0x18f6b7[_0x2be4aa(0x15a)](_0x2448b0,JSON['stringify']([_0x4c4f8d['style'][_0x2be4aa(0x144)],_0x4c4f8d[_0x2be4aa(0x14f)]['top']])),_0x26bdc6['drag']=!0x1;});}}();const _0x4ebe9a=async()=>{const _0x2f989d=_0x140d71;if(!map&&!g&&!g[_0x2f989d(0x1da)])return await this[_0x2f989d(0x16d)](0x12c),_0x4ebe9a(),![];window[_0x2f989d(0x160)][_0x2f989d(0x150)]();};window[_0x140d71(0x160)][_0x140d71(0x146)](),g[_0x140d71(0x1c3)][_0x140d71(0x1ca)]({'fun':_0x4ebe9a,'data':''});})();
+(() => {
+  "use strict";
+  class AStar {
+    constructor(
+      collisionsString,
+      width,
+      height,
+      start,
+      end,
+      additionalCollisions
+    ) {
+      this.width = width;
+      this.height = height;
+      this.collisions = this.parseCollisions(collisionsString, width, height);
+      this.additionalCollisions = additionalCollisions || {};
+      this.start = this.collisions[start.x][start.y];
+      this.end = this.collisions[end.x][end.y];
+      this.start.beginning = true;
+      this.start.g = 0;
+      this.start.f = heuristic(this.start, this.end);
+      this.end.target = true;
+      this.end.g = 0;
+      //if(this.start.collision) throw new Error('Start point cannot be a collision!');
+      //if(this.end.collision) throw new Error('End point cannot be a collision!');
+      this.addNeighbours();
+      this.openSet = [];
+      this.closedSet = [];
+      this.openSet.push(this.start);
+    }
+
+    parseCollisions(collisionsString, width, height) {
+      const collisions = new Array(width);
+      for (let w = 0; w < width; w++) {
+        collisions[w] = new Array(height);
+        for (let h = 0; h < height; h++) {
+          collisions[w][h] = new Point(
+            w,
+            h,
+            collisionsString.charAt(w + h * width) === "1"
+          );
+        }
+      }
+      return collisions;
+    }
+
+    addNeighbours() {
+      for (let i = 0; i < this.width; i++) {
+        for (let j = 0; j < this.height; j++) {
+          this.addPointNeighbours(this.collisions[i][j]);
+        }
+      }
+    }
+
+    addPointNeighbours(point) {
+      const x = point.x,
+        y = point.y;
+      const neighbours = [];
+      if (x > 0) neighbours.push(this.collisions[x - 1][y]);
+      if (y > 0) neighbours.push(this.collisions[x][y - 1]);
+      if (x < this.width - 1) neighbours.push(this.collisions[x + 1][y]);
+      if (y < this.height - 1) neighbours.push(this.collisions[x][y + 1]);
+      point.neighbours = neighbours;
+    }
+
+    anotherFindPath() {
+      while (this.openSet.length > 0) {
+        let currentIndex = this.getLowestF();
+        let current = this.openSet[currentIndex];
+        if (current === this.end) return this.reconstructPath();
+        else {
+          this.openSet.splice(currentIndex, 1);
+          this.closedSet.push(current);
+          for (const neighbour of current.neighbours) {
+            if (this.closedSet.includes(neighbour)) continue;
+            else {
+              const tentative_score = current.g + 1;
+              let isBetter = false;
+              if (
+                this.end == this.collisions[neighbour.x][neighbour.y] ||
+                (!this.openSet.includes(neighbour) &&
+                  !neighbour.collision &&
+                  !this.additionalCollisions[neighbour.x + 256 * neighbour.y])
+              ) {
+                this.openSet.push(neighbour);
+                neighbour.h = heuristic(neighbour, this.end);
+                isBetter = true;
+              } else if (
+                tentative_score < neighbour.g &&
+                !neighbour.collision
+              ) {
+                isBetter = true;
+              }
+              if (isBetter) {
+                neighbour.previous = current;
+                neighbour.g = tentative_score;
+                neighbour.f = neighbour.g + neighbour.h;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    getLowestF() {
+      let lowestFIndex = 0;
+      for (let i = 0; i < this.openSet.length; i++) {
+        if (this.openSet[i].f < this.openSet[lowestFIndex].f) lowestFIndex = i;
+      }
+      return lowestFIndex;
+    }
+
+    reconstructPath() {
+      const path = [];
+      let currentNode = this.end;
+      while (currentNode !== this.start) {
+        path.push(currentNode);
+        currentNode = currentNode.previous;
+      }
+      return path;
+    }
+  }
+
+  class Point {
+    constructor(x, y, collision) {
+      this.x = x;
+      this.y = y;
+      this.collision = collision;
+      this.g = 10000000;
+      this.f = 10000000;
+      this.neighbours = [];
+      this.beginning = false;
+      this.target = false;
+      this.previous = undefined;
+    }
+  }
+  const heuristic = (p1, p2) => {
+    return Math.abs(p1.x - p2.x) + Math.abs(p1.y - p2.y);
+  };
+
+  const getWay = (x, y) => {
+    return new AStar(
+      map.col,
+      map.x,
+      map.y,
+      { x: hero.x, y: hero.y },
+      { x: x, y: y },
+      g.npccol
+    ).anotherFindPath();
+  };
+
+  if (typeof unsafeWindow !== "undefined") {
+    //Nadpisywanie window w przypadku korzystania z unsafeWindow od GM.
+    window = unsafeWindow;
+  }
+
+  const storage = new (class {
+    constructor() {
+      this.hasGMPermissions =
+        typeof GM_getValue !== "undefined" &&
+        typeof GM_setValue !== "undefined"; //Czy w GM zostały nadane uprawnienia GM_setValue oraz GM_getValue
+      this.getVal = !this.hasGMPermissions
+        ? window["localStorage"].getItem.bind(window.localStorage)
+        : GM_getValue;
+      this.setVal = !this
+        .hasGMPermissions /* Wybranie sposobu zapisywania informacji, prioryter - GM_Storage */
+        ? window["localStorage"].setItem.bind(window.localStorage)
+        : GM_setValue;
+      this.prefix = `${window.getCookie("user_id")}|${window.getCookie(
+        "mchar_id"
+      )}`; //Prefix umożliwiający osobne trasy na różnych postaciach.
+    }
+    get(name, def) {
+      // Pobieranie wartości z storage w przypadku jej nie istnienia zwraca argument def, próbuje ją parsować.
+      let val = this.getVal(`${this.prefix}|${name}`, def);
+      try {
+        return val !== null ? JSON.parse(val) : def;
+      } catch (e) {
+        return val !== null ? val : def;
+      }
+    }
+    set(name, val) {
+      //Zapisywanie do storage.
+      this.setVal(`${this.prefix}|${name}`, val);
+      return val; // Zwraza zapisaną wartość.
+    }
+  })();
+  const isSi = window.getCookie("interface") === "si"; //Czy silnik jest SI. true/false
+
+  const getCordsOfNextGw = (maps) => {
+    const map = isSi ? window.map : window.Engine.map?.d; //Zmienna z mapą w zależności od silnika.
+    //Przeniesione do środka z powodu późnej inicjacji mapy na NI
+
+    //Argument to tablica z id map.
+    if (!maps.includes(map.id)) {
+      return false;
+    } // Jeżeli nie znajdujemy się na trasie zwraca false
+    let increament = storage.get("currIndex", 0);
+    // Pobranie indexu z storage def = 0
+    while (maps[increament] !== map.id) {
+      //Dopóki index nie odpowiada indexowi aktualnej mapy inkrementujemy go.
+      increament++;
+      if (increament >= maps.length) {
+        // W przypadku przekorczenia długości tablicy map zerujemy index, zeruje również jeżeli poprzednia tablica była dłuższa od obecnej i index przekroczył length.
+        increament = 0;
+      }
+    }
+    storage.set("currIndex", increament);
+    //Zapisujemy znaleziony index.
+    //Zapisywnaie przydatne przy trasach z powtarzającymi się tymi samymi mapami np. kanion.
+    const desiredMap =
+      increament === maps.length - 1
+        ? maps[maps.length - 1] === maps[0]
+          ? maps[1]
+          : maps[0]
+        : maps[++increament];
+    //Jeżeli index jest równy długości tablicy, jeżeli wartość 0 indexu jest taka sama co ostatniego wybieramy wartość indexu 1 wpp wybieramy następną mapę w tablicy.
+    if (!desiredMap) {
+      return false;
+    }
+    //Jeżeli wystąpił błąd przy wyborze następnej mapy w celu uniknięcia kolejnych błędów zwracamy false.
+    const desiredGw = isSi
+      ? window.g.gwIds[desiredMap]?.split(".").map((val) => parseInt(val))
+      : Engine.map.gateways.getList().find((gw) => gw.d.id === desiredMap).d;
+
+    //Szukamy przejścia o odpowiednim id pasującym do wcześniej wybranej mapy z tablicy, pobierając je z zmiennych odpowiednich dla używanego silnika gry.
+    if (!desiredGw) {
+      return false;
+    }
+    //Jeżeli nie znaleziono przejścia zwracamy false.
+    return isSi
+      ? { x: desiredGw[0], y: desiredGw[1] } //si
+      : { x: desiredGw.x, y: desiredGw.y }; //ni
+  }; //Zwracamy obiekt z `x` oraz `y` znalezionego przejścia
+  window.getCordsOfNextGw = getCordsOfNextGw;
+
+  window.kamiloBot = new (class {
+    constructor() {
+      this.id = window.getCookie("user_id");
+      this.e2Mob;
+      this.bestMob;
+      this.npcArr = [];
+      this.itemArr = [];
+      this.settings = storage.get(`settingsBot`)
+        ? storage.get(`settingsBot`)
+        : {
+            buttonE2: "Włącz!",
+            selectE2: "default",
+            setupy: "default",
+            expMaps: ["Mapy do expienia"],
+            expBack: ["Mapy dojściowe"],
+            backE2Maps: [],
+            buttonExp: "Włącz!",
+            buttonBack: "Włącz!",
+            buttonHeros: "Włącz!",
+            buttonSell: "Włącz!",
+            selectHeros: "default",
+            delay: 500,
+            toSellArr: "Wpisz co sellać rozdzielone `,`",
+            display: "block",
+            amountMix: 10,
+          };
+    }
+    createDiv() {
+      const mainMenu = document.createElement("div"),
+        botPosition = storage.get("botPos")
+          ? storage.get("botPos")
+          : ["0px", "0px"];
+      mainMenu.id = "mainMenu";
+      mainMenu.innerHTML += `
+      <div class="container">
+        <div class="title"><span id="labelInfo">KamiloBot</span></div>
+        <div class="sth1"></div>
+        <div class="button1">
+        <span>Elity II</span>
+        <select id="selectE2">
+          <option value="default" disabled>Wybierz E2</option>
+          <option value="Goplana">Goplana 75lvl</option>
+          <option value="Foverk Turrim">Foverk Turrim 57lvl</option>
+        </select>
+        <button id="buttonE2"></button>
+        </div>
+
+        <div class="button2">
+        <span>Mapy dojściowe: </span> <input type="text" id="expBack">
+        <span>Mapy:</span>
+        <input type="text" id="expMaps">
+        <span>Setupy: </span>
+        <select id="setupy">
+          <option value="default" disabled>Wybierz Setup</option>
+          <option value="testowy">Testowy setup</option>
+          <option value="testowy2">Testowy setup2</option>
+        </select>
+        <button id="buttonExp"></button>
+        </div>
+
+        <div class="areaButton1">
+        <span>Herosi: </span>
+        <select id="heros">
+          <option value="default" disabled>Wybierz herosa</option>
+          <option value="przewo">Zły przewodnik 63lvl</option>
+          <option value="kostek">Piekielny kościej 74lvl</option>
+        </select>
+        <button id="buttonHeros"></button>
+        </div>
+
+        <div class="areaButton2">
+          Wracanie: <button id="back"></button><br>
+          Sellanie Tunia: <button id="sell"></button><br>
+          Co sellać: <textarea id="sellFilter" rows="5" cols="33"></textarea><br>
+          Ile mixów: <input type="number" id="amountMix">
+        </div>
+
+        <div class="sth2">
+        </div>
+    </div>`;
+      document.body.appendChild(mainMenu);
+      amountMix.value = this.settings.amountMix;
+      amountMix.addEventListener("input", () => {
+        this.settings.amountMix = amountMix.value;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      buttonE2.textContent = this.settings.buttonE2;
+      if (this.settings.buttonE2 === "Włącz!") {
+        this.settings.buttonE2 = "Włącz!";
+        buttonE2.style.color = "red";
+      } else {
+        this.settings.buttonE2 = "Wyłącz!";
+        buttonE2.style.color = "lime";
+      }
+      buttonE2.addEventListener("click", () => {
+        if (this.settings.buttonE2 === "Włącz!") {
+          this.settings.buttonE2 = "Wyłącz!";
+          buttonE2.style.color = "lime";
+        } else {
+          this.settings.buttonE2 = "Włącz!";
+          buttonE2.style.color = "red";
+        }
+        buttonE2.textContent = this.settings.buttonE2;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      selectE2.value = this.settings.selectE2;
+      selectE2.addEventListener("change", () => {
+        this.settings.selectE2 = selectE2.value;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+        switch (selectE2.value) {
+          case "Goplana":
+            this.settings.backE2Maps = [
+              257, 246, 229, 500, 701, 1137, 1141, 1145, 1146, 1147, 1149, 1150,
+              1151,
+            ];
+            break;
+        }
+      });
+      expMaps.value = this.settings.expMaps;
+      expMaps.addEventListener("input", () => {
+        this.settings.expMaps = expMaps.value
+          .split(",")
+          .map((el) => parseInt(el));
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      buttonExp.textContent = this.settings.buttonExp;
+      if (this.settings.buttonExp === "Włącz!") {
+        this.settings.buttonExp = "Włącz!";
+        buttonExp.style.color = "red";
+      } else {
+        this.settings.buttonExp = "Wyłącz!";
+        buttonExp.style.color = "lime";
+      }
+      buttonExp.addEventListener("click", () => {
+        if (this.settings.buttonExp === "Włącz!") {
+          this.settings.buttonExp = "Wyłącz!";
+          buttonExp.style.color = "lime";
+        } else {
+          this.settings.buttonExp = "Włącz!";
+          buttonExp.style.color = "red";
+        }
+        buttonExp.textContent = this.settings.buttonExp;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      switch (setupy.value) {
+        case "testowy":
+          this.settings.expMaps = [
+            2731, 2732, 2733, 2730, 2733, 2732, 2731, 2730,
+          ];
+          expMaps.value = this.settings.expMaps;
+          break;
+      }
+      sell.textContent = this.settings.buttonSell;
+      if (this.settings.buttonSell === "Włącz!") {
+        this.settings.buttonSell = "Włącz!";
+        sell.style.color = "red";
+      } else {
+        this.settings.buttonSell = "Wyłącz!";
+        sell.style.color = "lime";
+      }
+      sell.addEventListener("click", () => {
+        if (this.settings.buttonSell === "Włącz!") {
+          this.settings.buttonSell = "Wyłącz!";
+          sell.style.color = "lime";
+        } else {
+          this.settings.buttonSell = "Włącz!";
+          sell.style.color = "red";
+        }
+        sell.textContent = this.settings.buttonSell;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      sellFilter.value = this.settings.toSellArr;
+      sellFilter.addEventListener("input", () => {
+        this.settings.toSellArr = sellFilter.value.split(",");
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      back.textContent = this.settings.buttonBack;
+      if (this.settings.buttonBack === "Włącz!") {
+        this.settings.buttonBack = "Włącz!";
+        back.style.color = "red";
+      } else {
+        this.settings.buttonBack = "Wyłącz!";
+        back.style.color = "lime";
+      }
+      back.addEventListener("click", () => {
+        if (this.settings.buttonBack === "Włącz!") {
+          this.settings.buttonBack = "Wyłącz!";
+          back.style.color = "lime";
+        } else {
+          this.settings.buttonBack = "Włącz!";
+          back.style.color = "red";
+        }
+        back.textContent = this.settings.buttonBack;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      buttonHeros.textContent = this.settings.buttonHeros;
+      if (this.settings.buttonHeros === "Włącz!") {
+        this.settings.buttonHeros = "Włącz!";
+        buttonHeros.style.color = "red";
+      } else {
+        this.settings.buttonHeros = "Wyłącz!";
+        buttonHeros.style.color = "lime";
+      }
+      buttonHeros.addEventListener("click", () => {
+        if (this.settings.buttonHeros === "Włącz!") {
+          this.settings.buttonHeros = "Wyłącz!";
+          buttonHeros.style.color = "lime";
+        } else {
+          this.settings.buttonHeros = "Włącz!";
+          buttonHeros.style.color = "red";
+        }
+        buttonHeros.textContent = this.settings.buttonHeros;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      heros.value = this.settings.selectHeros;
+      heros.addEventListener("input", () => {
+        this.settings.selectHeros = heros.value;
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      expBack.value = this.settings.expBack;
+      expBack.addEventListener("input", () => {
+        this.settings.expBack = expBack.value
+          .split(",")
+          .map((el) => parseInt(el));
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      mainMenu.style.display = this.settings.display;
+      labelInfo.addEventListener("click", () => {
+        if (
+          this.settings.display === "none" &&
+          mainMenu.style.display === "none"
+        ) {
+          this.settings.display = "block";
+          mainMenu.style.display = "block";
+        } else {
+          this.settings.display = "none";
+          mainMenu.style.display = "none";
+        }
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      document.querySelector("#lagmeter").addEventListener("click", () => {
+        if (
+          this.settings.display === "none" &&
+          mainMenu.style.display === "none"
+        ) {
+          this.settings.display = "block";
+          mainMenu.style.display = "block";
+        } else {
+          this.settings.display = "none";
+          mainMenu.style.display = "none";
+        }
+        storage.set("settingsBot", JSON.stringify(this.settings));
+      });
+      this.css();
+      mainMenu.style.left = botPosition[0];
+      mainMenu.style.top = botPosition[1];
+      this.draggable(mainMenu, "botPos");
+    }
+    css() {
+      const css = document.createElement("style");
+      css.innerHTML = `
+          #mainMenu {
+          position: absolute;
+          width: 500px;
+          height: 400px;
+          background-color: grey;
+          border-radius: 10px;
+          z-index: 9999;
+        }
+
+        #mainMenu button {
+          font-weight: bold;
+          border-radius: 15px;
+        }
+
+        #mainMenu select {
+          font-weight: bold;
+          border-radius: 15px;
+        }
+
+        #expMaps {
+          width: 150px;
+          height: 50px;
+        }
+
+        #sellFilter {
+          width: 180px;
+          height: 30px;
+          resize: none;
+        }
+
+        #amountMix {
+          width: 30px;
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1.6fr 0.4fr 1fr 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            ". title title ."
+            "button1 button1 button2 button2"
+            "areaButton1 areaButton1 areaButton2 areaButton2"
+            "areaButton1 areaButton1 areaButton2 areaButton2"
+            "sth1 sth1 sth2 sth2";
+        }
+        
+        .title { 
+          grid-area: title;
+          font-size: 30px;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .sth1 { grid-area: sth1; }
+        
+        .button1 { 
+          grid-area: button1;
+          justify-content: center;
+        }
+        
+        .button2 { grid-area: button2; }
+        
+        .areaButton1 { 
+          grid-area: areaButton1;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .areaButton2 { 
+          grid-area: areaButton2;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .sth2 { grid-area: sth2; } 
+        `;
+      document.head.appendChild(css);
+    }
+    searchPath(x, y) {
+      let _road_ = getWay(x, y);
+      if (!Array.isArray(_road_)) return;
+      window.road = _road_;
+    }
+    parseInput() {
+      ((parseInput) => {
+        window.parseInput = (data = {}, ...args) => {
+          parseInput(data, ...args);
+          if (data.hasOwnProperty("npc") && data.npc !== undefined) {
+            for (const [id, npc] of Object.entries(data.npc)) {
+              if (npc.x && npc.y) {
+                npc.realDist = getWay(npc.x, npc.y);
+              }
+              this.npcArr[id] = npc;
+              if (this.npcArr[id].del) {
+                delete this.npcArr[id];
+              }
+            }
+          }
+        };
+      })(window.parseInput);
+    }
+    tpMap(mapId) {
+      const idMap = Object.keys(g.item).find(
+        (x) =>
+          g.item[x].stat.includes("teleport=" + mapId + ",") &&
+          !g.item[x].tip.includes("Gotowy do użycia za")
+      );
+      if (!idMap) {
+        return message(`Nie znaleziono w torbie tp na mape ${mapId}`);
+      } else if (window.map.id === mapId) {
+        return message(`Znajdujesz sie juz na mapie ${map.name}`);
+      }
+      _g(`moveitem&id=${699694993}&st=1`);
+      return _g(`moveitem&st=1&id=${idMap}`);
+    }
+    selling() {
+      (async () => {
+        while (true) {
+          if (this.settings.buttonSell === "Wyłącz!") {
+            switch (storage.get("sellProcess")) {
+              case 1:
+                if (window.map.id !== 344) {
+                  this.tpMap(344);
+                } else {
+                  storage.set("sellProcess", 2);
+                }
+                break;
+              case 2:
+                if (window.map.id === 344) {
+                  this.goToDoor(353);
+                } else {
+                  if (!g.lock.list[0]) {
+                    this.talkToNpc(16366);
+                  } else if (g.lock.list[0] === "npcdialog") {
+                    this.clickText("Pokaż mi, ");
+                  } else if (g.lock.list[0] === "shop") {
+                    this.shopTransaction(
+                      "Pomarańczowa mikstura",
+                      this.settings.amountMix
+                    );
+                  }
+                }
+                break;
+              case 3:
+                //wracanie
+                if (
+                  g.lock.list[0] !== "npcdialog" ||
+                  g.lock.list[0] !== "shop"
+                ) {
+                  this.goToDoor(344);
+                }
+                break;
+            }
+          }
+          await this.sleep(1500);
+        }
+      })();
+    }
+    shopAcceptDelay() {
+      shop_accept();
+    }
+    shopCloseDelay() {
+      shop_close();
+    }
+    async shopTransaction(name, amount, tpToBuy) {
+      //buy mix and teleport
+      // TODO
+      //kupowanie teleportów i wracanie na expo
+      const teleportCounter = Object.values(g.item).filter(
+        (item) => item.name === "Zwój teleportacji na Kwieciste Przejście"
+      ).length;
+      const potionCounter = Object.values(g.item).filter(
+        (el) => el.name === name
+      ).length;
+      const findItemToBuy = Object.values(g.item).find(
+        (item) => item.loc === "n" && item.name === name
+      );
+      if (
+        potionCounter <= this.settings.amountMix &&
+        g.shop.b.length <= 0 &&
+        findItemToBuy
+      ) {
+        g.shop.b.push({ id: findItemToBuy.id, q: amount });
+      }
+      //sell
+      const toSell = Object.values(g.item)
+        .filter(
+          (item) =>
+            this.settings.toSellArr.includes(item.name) && item.loc === "g"
+        )
+        .map((item) => item.id);
+      toSell.forEach((item, index) => {
+        if (!g.shop.s.includes(toSell[index])) {
+          g.shop.s.push(toSell[index]);
+          toSell.splice(index, 1);
+        }
+      });
+      if (g.shop.b.length === 1 || toSell.length > 0) {
+        await this.sleep(1000);
+        this.shopAcceptDelay();
+      }
+      if (potionCounter >= 5 && !toSell.length) {
+        await this.sleep(3000);
+        this.shopCloseDelay();
+        storage.set("sellProcess", 3);
+      }
+    }
+    goToDoor(id) {
+      for (const door of Object.entries(g.gwIds)) {
+        const doorId = door[0];
+        const cordsArr = door[1].split(".").map((value) => {
+          return parseInt(value);
+        });
+        const cords = { x: cordsArr[0], y: cordsArr[1] };
+        if (id == doorId) {
+          if (!map.hce(cords, hero)) {
+            _g("walk");
+          }
+          this.searchPath(cords.x, cords.y);
+          return true;
+        }
+      }
+      return false;
+    }
+    findBestMob(min, max) {
+      return this.npcArr
+        .filter(
+          (npc) =>
+            npc.lvl >= min && npc.lvl <= max && !npc.walkover && npc.realDist
+        )
+        ?.sort((a, b) => {
+          const distA = a.realDist;
+          const distB = b.realDist;
+          return distA > distB ? 1 : distA === distB ? 0 : -1;
+        })[0];
+    }
+    handlerE2() {
+      for (const mobLoop of Object.values(g.npc)) {
+        if (mobLoop.wt > 19 && mobLoop.wt > 78 && mobLoop.fake !== true) {
+          this.e2Mob = mobLoop;
+        }
+      }
+      return this.e2Mob;
+    }
+    attack(bM) {
+      if (Math.sqrt((bM.x - hero.x) ** 2 + (bM.y - hero.y) ** 2) <= 1) {
+        _g(`fight&a=attack&ff=1&id=-${bM.id}`);
+      }
+    }
+    exp() {
+      (async () => {
+        while (true) {
+          if (this.settings.buttonExp === "Wyłącz!") {
+            const nextGw = window.getCordsOfNextGw(this.settings.expMaps);
+            if (
+              (!this.bestMob && nextGw) ||
+              this.bestMob.realDist < this.findBestMob(40, 50).realDist
+            ) {
+              this.bestMob = this.findBestMob(40, 50);
+            } else if (nextGw && !(this.bestMob.id in this.npcArr)) {
+              delete this.bestMob;
+            } else if (nextGw && this.bestMob.id) {
+              this.attack(this.bestMob);
+            }
+            if (this.bestMob) {
+              this.searchPath(this.bestMob.x, this.bestMob.y);
+            } else if (!this.bestMob && nextGw) {
+              if (!this.findBestMob(40, 50))
+                this.searchPath(nextGw.x, nextGw.y);
+            } else if (!nextGw) {
+              this.goToDoor(
+                this.settings.expBack[this.settings.expBack.indexOf(map.id) + 1]
+              );
+            }
+            if (!nextGw && !this.settings.expBack.includes(map.id)) {
+              window.message("Błędny setup!");
+            }
+          }
+          await this.sleep(this.settings.delay);
+        }
+      })();
+    }
+    attackE2() {
+      (async () => {
+        while (true) {
+          if (this.settings.buttonE2 === "Wyłącz!") {
+            if (!this.e2Mob) {
+              this.e2Mob = this.handlerE2();
+            } else if (!(this.e2Mob.id in g.npc)) {
+              delete this.e2Mob;
+            } else {
+              this.attack(this.e2Mob);
+              await this.sleep(1500);
+            }
+            if (this.e2Mob) {
+              this.searchPath(e2Mob.x, e2Mob.y);
+            }
+          }
+          await this.sleep(this.settings.delay);
+        }
+      })();
+    }
+    goBackE2() {
+      (async () => {
+        while (true) {
+          if (this.settings.buttonBack === "Wyłącz!") {
+            this.goToDoor(
+              this.settings.backE2Maps[
+                this.settings.backE2Maps.indexOf(map.id) + 1
+              ]
+            );
+            switch (map.id) {
+              case 1149:
+                this.talkToNpc(162544);
+                this.clickText("Przepuść mnie");
+                break;
+            }
+          }
+          await this.sleep(1500);
+        }
+      })();
+    }
+    findingHeros() {
+      const handler = {
+        116: [{ x: 35, y: 3 }],
+        2730: [
+          { x: 48, y: 11 },
+          { x: 33, y: 60 },
+        ],
+        116: [{ x: 25, y: 57 }],
+      };
+      // const checkedCords = storage.get("checked")
+      //   ? storage.get("checked")
+      //   : {
+      //       116: [],
+      //       2730: [],
+      //     };
+      const checkedCords = {
+        116: [],
+        2730: [],
+      };
+      const maps = [1, 8, 116, 2730, 116];
+      (async () => {
+        while (true) {
+          if (this.settings.buttonHeros === "Wyłącz!") {
+            if (handler.hasOwnProperty(map.id)) {
+              for (const [index, cords] of Object.entries(handler[map.id])) {
+                if (
+                  cords.x === hero.x &&
+                  cords.y === hero.y &&
+                  checkedCords[map.id].length < handler[map.id].length
+                ) {
+                  checkedCords[map.id].push({ x: cords.x, y: cords.y });
+                }
+                let didCheck = false;
+                for (const [index2, checked] of Object.entries(
+                  checkedCords[map.id]
+                )) {
+                  if (checked.x === cords.x && checked.y === cords.y) {
+                    didCheck = true;
+                    //storage.set("checked", checkedCords);
+                    break;
+                  }
+                }
+                if (didCheck) {
+                  continue;
+                }
+                kamiloBot.searchPath(cords.x, cords.y);
+              }
+            }
+            if (!handler.hasOwnProperty(map.id)) {
+              //domyślnie pętla
+              const nextGw = window.getCordsOfNextGw(maps);
+              this.searchPath(nextGw.x, nextGw.y);
+            }
+          }
+          await this.sleep(1500);
+        }
+      })();
+    }
+    talkToNpc(id) {
+      const npc = g.npc[id];
+      if (!npc) {
+        return false;
+      }
+      if (map.hce(hero, npc) > 1) {
+        this.searchPath(npc.x, npc.y);
+        return true;
+      } else {
+        _g(`talk&id=${npc.id}`);
+        return true;
+      }
+    }
+    clickText(text) {
+      const dialogNodeList = dialog.querySelectorAll("#replies.replies li");
+      if (!g.talk.id || !dialogNodeList.length) {
+        return false;
+      }
+      dialogNodeList.forEach((li, index) => {
+        if (li.textContent.includes(text)) {
+          dialogNodeList[index].click();
+          return true;
+        }
+      });
+    }
+    sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+    init() {
+      window.bB = () => {};
+      this.createDiv();
+      this.exp();
+      this.goBackE2();
+      this.attackE2();
+      this.selling();
+      this.findingHeros();
+    }
+    draggable(a, b) {
+      const c = this,
+        d =
+          `undefined` != typeof window.orientation ||
+          -1 !== navigator.userAgent.indexOf(`IEMobile`);
+      (a.ondragstart = () => {}),
+        a.addEventListener(d ? `touchstart` : `mousedown`, (b) => {
+          window.g.lock.add(`ktj_click`);
+          [`INPUT`, `TEXTAREA`].includes(b.target.tagName) ||
+            ((c.drag = !0),
+            d && ((c.x = b.touches[0].pageX), (c.y = b.touches[0].pageY)),
+            (c.start_x = c.x - a.offsetLeft),
+            (c.start_y = c.y - a.offsetTop));
+        }),
+        document.addEventListener(d ? `touchmove` : `mousemove`, (b) => {
+          if (
+            (b.pageX && ((c.x = b.pageX), (c.y = b.pageY)),
+            d && ((c.x = b.touches[0].pageX), (c.y = b.touches[0].pageY)),
+            c.drag)
+          ) {
+            let b = a.offsetWidth,
+              d = a.offsetHeight,
+              e = c.x - c.start_x,
+              f = c.y - c.start_y;
+            0 > e && (e = 0),
+              e + b > window.innerWidth && (e = window.innerWidth - b),
+              (a.style.left = `${e}px`),
+              0 > f && (f = 0),
+              f + d > window.innerHeight && (f = window.innerHeight - d),
+              (a.style.top = `${f}px`);
+          }
+        }),
+        document.addEventListener(d ? `touchend` : `mouseup`, () => {
+          window.g.lock.remove(`ktj_click`),
+            storage.set(b, JSON.stringify([a.style.left, a.style.top])),
+            (c.drag = !1);
+        });
+    }
+  })();
+  const checkIfGameStarted = async () => {
+    if (!map && !g && !g.npc) {
+      await this.sleep(300);
+      checkIfGameStarted();
+      return false;
+    }
+    window.kamiloBot.init();
+  };
+  window.kamiloBot.parseInput();
+  g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
+})();
