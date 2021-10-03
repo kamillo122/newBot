@@ -957,6 +957,5 @@
     }
     window.kamiloBot.init();
   };
-  window.kamiloBot.parseInput();
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
