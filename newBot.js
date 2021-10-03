@@ -604,6 +604,7 @@
               if (npc.x && npc.y) {
                 npc.realDist = getWay(npc.x, npc.y);
               }
+console.log(npc);
               this.npcArr[id] = npc;
               if (this.npcArr[id].del) {
                 delete this.npcArr[id];
