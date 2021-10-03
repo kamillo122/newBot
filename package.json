@@ -5,15 +5,15 @@
     "mongodb" : "4.0.1",
     "yarn": "^1.22.10"
   },
-  "name": "serverinfo",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "serverExpress.js",
+  "main": "server.js",
   "scripts": {
-    "dev" : "node serverExpress.js",
-    "dev:watch" : "nodemon serverExpress.js",
+    "dev" : "node server.js",
+    "dev:watch" : "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node serverExpress.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
