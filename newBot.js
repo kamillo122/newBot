@@ -949,13 +949,4 @@
         });
     }
   })();
-  const checkIfGameStarted = async () => {
-    if (!map && !g && !g.npc) {
-      await this.sleep(300);
-      checkIfGameStarted();
-      return false;
-    }
-    window.kamiloBot.init();
-  };
-  g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
