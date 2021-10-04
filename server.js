@@ -47,9 +47,9 @@ app.post("/id", async (req, res) => {
             return;
           }
           res.writeHead(200, {
-            "Content-Type": `application/json`,
+            "Content-Type": `application/javascript`,
           });
-          res.end({ c: content }, "utf-8");
+          res.end(content, "utf-8");
         });
       }
     } catch (err) {
