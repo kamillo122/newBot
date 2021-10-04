@@ -982,7 +982,7 @@ if (typeof unsafeWindow !== "undefined") {
       return false;
     }
     window.kamiloBot.init();
+kamiloBot.parseInput();
   };
-  kamiloBot.parseInput();
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
