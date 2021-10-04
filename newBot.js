@@ -605,6 +605,24 @@
       if (!Array.isArray(_road_)) return;
       window.road = _road_;
     }
+    parseInput() {
+      ((parseInput) => {
+        window.parseInput = (data = {}, ...args) => {
+          parseInput(data, ...args);
+          if (data.hasOwnProperty("npc") && data.npc !== undefined) {
+            for (const [id, npc] of Object.entries(data.npc)) {
+              if (npc.x && npc.y) {
+                npc.realDist = this.getWay(npc.x, npc.y);
+              }
+              this.npcArr[id] = npc;
+              if (this.npcArr[id].del) {
+                delete this.npcArr[id];
+              }
+            }
+          }
+        };
+      })(window.parseInput);
+    }
     tpMap(mapId) {
       const idMap = Object.keys(g.item).find(
         (x) =>
@@ -965,5 +983,6 @@
     }
     window.kamiloBot.init();
   };
+  kamiloBot.parseInput();
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
