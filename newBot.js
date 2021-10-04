@@ -14,6 +14,11 @@
 // @grant        GM_setClipboard
 // ==/UserScript==
 
+if (typeof unsafeWindow !== "undefined") {
+  //Nadpisywanie window w przypadku korzystania z unsafeWindow od GM.
+  window = unsafeWindow;
+}
+
 (() => {
   "use strict";
   class AStar {
@@ -163,11 +168,6 @@
       g.npccol
     ).anotherFindPath();
   };
-
-  if (typeof unsafeWindow !== "undefined") {
-    //Nadpisywanie window w przypadku korzystania z unsafeWindow od GM.
-    window = unsafeWindow;
-  }
 
   const storage = new (class {
     constructor() {
