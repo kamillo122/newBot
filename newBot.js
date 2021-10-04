@@ -254,7 +254,6 @@ if (typeof unsafeWindow !== "undefined") {
       this.id = window.getCookie("user_id");
       this.e2Mob;
       this.bestMob;
-      this.npcArr = [];
       this.itemArr = [];
       this.settings = storage.get(`settingsBot`)
         ? storage.get(`settingsBot`)
@@ -605,24 +604,6 @@ if (typeof unsafeWindow !== "undefined") {
       if (!Array.isArray(_road_)) return;
       window.road = _road_;
     }
-    parseInput() {
-      ((parseInput) => {
-        window.parseInput = (data = {}, ...args) => {
-          parseInput(data, ...args);
-          if (data.hasOwnProperty("npc") && data.npc !== undefined) {
-            for (const [id, npc] of Object.entries(data.npc)) {
-              if (npc.x && npc.y) {
-                npc.realDist = this.getWay(npc.x, npc.y);
-              }
-              this.npcArr[id] = npc;
-              if (this.npcArr[id].del) {
-                delete this.npcArr[id];
-              }
-            }
-          }
-        };
-      })(window.parseInput);
-    }
     tpMap(mapId) {
       const idMap = Object.keys(g.item).find(
         (x) =>
@@ -747,7 +728,7 @@ if (typeof unsafeWindow !== "undefined") {
       return false;
     }
     findBestMob(min, max) {
-      return this.npcArr
+      return window.npcArr
         .filter(
           (npc) =>
             npc.lvl >= min && npc.lvl <= max && !npc.walkover && npc.realDist
@@ -778,7 +759,7 @@ if (typeof unsafeWindow !== "undefined") {
             const nextGw = window.getCordsOfNextGw(this.settings.expMaps);
             if (!this.bestMob && nextGw) {
               this.bestMob = this.findBestMob(40, 50);
-            } else if (nextGw && !(this.bestMob.id in this.npcArr)) {
+            } else if (nextGw && !(this.bestMob.id in window.npcArr)) {
               delete this.bestMob;
             } else if (nextGw && this.bestMob.id) {
               this.attack(this.bestMob);
@@ -975,7 +956,6 @@ if (typeof unsafeWindow !== "undefined") {
         });
     }
   })();
-  kamiloBot.parseInput();
   const checkIfGameStarted = async () => {
     if (!map && !g && !g.npc) {
       await this.sleep(300);
