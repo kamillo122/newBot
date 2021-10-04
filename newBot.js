@@ -975,6 +975,7 @@ if (typeof unsafeWindow !== "undefined") {
         });
     }
   })();
+  kamiloBot.parseInput();
   const checkIfGameStarted = async () => {
     if (!map && !g && !g.npc) {
       await this.sleep(300);
@@ -982,7 +983,6 @@ if (typeof unsafeWindow !== "undefined") {
       return false;
     }
     window.kamiloBot.init();
-kamiloBot.parseInput();
   };
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
