@@ -762,6 +762,7 @@ if (typeof unsafeWindow !== "undefined") {
             } else if (nextGw && !(this.bestMob.id in window.npcArr)) {
               delete this.bestMob;
             } else if (nextGw && this.bestMob.id) {
+              await this.sleep(500);
               this.attack(this.bestMob);
             }
             if (this.bestMob) {
