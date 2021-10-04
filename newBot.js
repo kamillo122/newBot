@@ -590,29 +590,20 @@
         `;
       document.head.appendChild(css);
     }
+    getWay(x, y) {
+      return new AStar(
+        map.col,
+        map.x,
+        map.y,
+        { x: hero.x, y: hero.y },
+        { x: x, y: y },
+        g.npccol
+      ).anotherFindPath();
+    }
     searchPath(x, y) {
-      let _road_ = getWay(x, y);
+      let _road_ = this.getWay(x, y);
       if (!Array.isArray(_road_)) return;
       window.road = _road_;
-    }
-    parseInput() {
-      ((parseInput) => {
-        window.parseInput = (data = {}, ...args) => {
-          parseInput(data, ...args);
-          if (data.hasOwnProperty("npc") && data.npc !== undefined) {
-            for (const [id, npc] of Object.entries(data.npc)) {
-              if (npc.x && npc.y) {
-                npc.realDist = getWay(npc.x, npc.y);
-              }
-console.log(npc);
-              this.npcArr[id] = npc;
-              if (this.npcArr[id].del) {
-                delete this.npcArr[id];
-              }
-            }
-          }
-        };
-      })(window.parseInput);
     }
     tpMap(mapId) {
       const idMap = Object.keys(g.item).find(
@@ -974,6 +965,5 @@ console.log(npc);
     }
     window.kamiloBot.init();
   };
-  window.kamiloBot.parseInput();
   g.loadQueue.push({ fun: checkIfGameStarted, data: "" });
 })();
