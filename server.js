@@ -22,12 +22,12 @@ app.post("/login", async (req, res) => {
 			error: "Podaj dane",
 		});
 	}
-	console.log(login, password);
 	const clientDb = await MongoClient.connect(uri, {
 		useNewUrlParser: true,
 	}).catch((err) => {
 		console.log(err);
 	});
+	console.log(login, password);
 	if (!clientDb) {
 		res.send({
 			error: "Database error connecting!",
@@ -38,7 +38,7 @@ app.post("/login", async (req, res) => {
 		const collection = await db.collection("snakePlayers");
 		const query = { login: login };
 		const checkID = await collection.findOne(query);
-		if (!checkID) {
+		if (login !== checkID?.login || password !== checkID?.password) {
 			res.send({
 				error: "login error",
 			});
@@ -103,4 +103,42 @@ app.post("/register", async (req, res) => {
 	} finally {
 		await clientDb.close();
 	}
+});
+
+app.post("/game", async (req, res) => {
+	const { login, score } = req.body;
+	if (!score && !login) {
+		console.log("data error");
+		res.status(418).send({
+			error: "data error",
+		});
+	}
+	const clientDb = await MongoClient.connect(uri, {
+		useNewUrlParser: true,
+	}).catch((err) => {
+		console.log(err);
+	});
+	if (!clientDb) {
+		res.send({
+			error: "Database error connecting!",
+		});
+	}
+	console.log(login, score);
+	// try {
+	// 	const db = await clientDb.db("snake");
+	// 	const collection = await db.collection("snakePlayers");
+	// 	const query = { login: login };
+	// 	const updateScore = await collection.updateOne(
+	// 		{ query },
+	// 		{
+	// 			$push: {
+	// 				score: score,
+	// 			},
+	// 		}
+	// 	);
+	// } catch (err) {
+	// 	console.log(err);
+	// } finally {
+	// 	await clientDb.close();
+	// }
 });
