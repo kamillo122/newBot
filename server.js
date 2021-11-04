@@ -86,6 +86,7 @@ app.post("/register", async (req, res) => {
 			const insert = await collection.insertOne({
 				login: login,
 				password: password,
+				score: [],
 			});
 			if (insert) {
 				res.send({
