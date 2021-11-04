@@ -128,16 +128,21 @@ app.post("/game", async (req, res) => {
 		const db = await clientDb.db("snake");
 		const collection = await db.collection("snakePlayers");
 		const query = { login: login };
-		const updateScore = await collection.updateOne(
-			{ query },
-			{
-				$push: {
-					score: {
-						scores: score,
-					},
-				},
-			}
+		// const updateScore = await collection.updateOne(
+		// 	{ query },
+		// 	{
+		// 		$push: {
+		// 			score: {
+		// 				scores: score,
+		// 			},
+		// 		},
+		// 	}
+		// );
+		const update = await db.collection.update(
+			{login: login},
+			{ $push: { score: score} }
 		);
+		console.log(score);
 	} catch (err) {
 		console.log(err);
 	} finally {
