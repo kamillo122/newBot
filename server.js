@@ -138,7 +138,7 @@ app.post("/game", async (req, res) => {
 		// 		},
 		// 	}
 		// );
-		const update = await db.collection.update(
+		const update = await db.collection.updateOne(
 			{login: login},
 			{ $push: { score: score} }
 		);
