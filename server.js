@@ -124,21 +124,23 @@ app.post("/game", async (req, res) => {
 		});
 	}
 	console.log(login, score);
-	// try {
-	// 	const db = await clientDb.db("snake");
-	// 	const collection = await db.collection("snakePlayers");
-	// 	const query = { login: login };
-	// 	const updateScore = await collection.updateOne(
-	// 		{ query },
-	// 		{
-	// 			$push: {
-	// 				score: score,
-	// 			},
-	// 		}
-	// 	);
-	// } catch (err) {
-	// 	console.log(err);
-	// } finally {
-	// 	await clientDb.close();
-	// }
+	try {
+		const db = await clientDb.db("snake");
+		const collection = await db.collection("snakePlayers");
+		const query = { login: login };
+		const updateScore = await collection.updateOne(
+			{ query },
+			{
+				$push: {
+					score: {
+						scores: score,
+					},
+				},
+			}
+		);
+	} catch (err) {
+		console.log(err);
+	} finally {
+		await clientDb?.close();
+	}
 });
