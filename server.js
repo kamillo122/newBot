@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv").config();
 const { MongoClient } = require("mongodb");
-const fs = require("fs");
 const uri =
 	"mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const app = express();
@@ -9,6 +10,34 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors());
+
+const generateAccessToken = (username, password) => {
+	return jwt.sign(
+		{ username: username, password: password },
+		process.env.TOKEN_SECRET,
+		{
+			expiresIn: "2h",
+		}
+	);
+};
+
+const authenticateToken = (req, res, next) => {
+	const authHeader = req.headers["authorization"];
+	const token = authHeader && authHeader.split(" ")[1];
+	if (!token) {
+		return res.send({
+			authorized: "error",
+		});
+	}
+	jwt.verify(token, process.env.TOKEN_SECRET, (err, user) => {
+		if (err) {
+			return res.send({ error: "auth" });
+		}
+		res.send({
+			auth: "ok",
+		});
+	});
+};
 
 app.listen(PORT, () => {
 	console.log(`it's alive on http://localhost:${PORT}`);
@@ -27,7 +56,6 @@ app.post("/login", async (req, res) => {
 	}).catch((err) => {
 		console.log(err);
 	});
-	console.log(login, password);
 	if (!clientDb) {
 		res.send({
 			error: "Database error connecting!",
@@ -43,9 +71,14 @@ app.post("/login", async (req, res) => {
 				error: "login error",
 			});
 		} else {
+			process.env.TOKEN_SECRET = require("crypto")
+				.randomBytes(64)
+				.toString("hex");
+			const token = generateAccessToken(login, password);
 			res.end(
 				JSON.stringify({
 					ok: 1,
+					token: token,
 				})
 			);
 		}
@@ -129,24 +162,56 @@ app.post("/game", async (req, res) => {
 		const db = await clientDb.db("snake");
 		const collection = await db.collection("snakePlayers");
 		const query = { login: login };
-		// const updateScore = await collection.updateOne(
-		// 	{ query },
-		// 	{
-		// 		$push: {
-		// 			score: {
-		// 				scores: score,
-		// 			},
-		// 		},
-		// 	}
-		// );
 		const update = await collection.updateOne(
-			{login: login},
-			{ $push: { score: score} }
+			{ login: login },
+			{ $push: { score: score } }
 		);
-		console.log(score);
 	} catch (err) {
 		console.log(err);
 	} finally {
 		await clientDb?.close();
+	}
+});
+
+app.post("/score", async (req, res) => {
+	const { login } = req.body;
+	if (!login) {
+		console.log("data error");
+		res.status(418).send({
+			error: "data error",
+		});
+	}
+	const clientDb = await MongoClient.connect(uri, {
+		useNewUrlParser: true,
+	}).catch((err) => {
+		console.log(err);
+	});
+	if (!clientDb) {
+		res.send({
+			error: "Database error connecting!",
+		});
+	}
+	try {
+		const db = await clientDb.db("snake");
+		const collection = await db.collection("snakePlayers");
+		const query = { login: login };
+		const checkID = await collection.findOne(query);
+		res.send({
+			score: checkID?.score,
+		});
+	} catch (err) {
+		console.log(err);
+	} finally {
+		await clientDb?.close();
+	}
+});
+
+app.post("/check", authenticateToken, async (req, res) => {
+	const { login } = req.body;
+	if (!login) {
+		console.log("data error");
+		res.status(418).send({
+			error: "data error",
+		});
 	}
 });
