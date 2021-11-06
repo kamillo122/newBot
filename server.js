@@ -197,7 +197,7 @@ app.post("/score", async (req, res) => {
 		const query = { login: login };
 		const checkID = await collection.findOne(query);
 		res.send({
-			score: checkID?.score,
+			score: checkID?.score || "brak",
 		});
 	} catch (err) {
 		console.log(err);
