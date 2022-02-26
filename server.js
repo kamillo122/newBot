@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const { MongoClient } = require("mongodb");
-const fs = require("fs");
 const uri =
 	"mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const app = express();
@@ -35,13 +34,16 @@ app.post("/", async (req, res) => {
 			const collection = db.collection("player");
 			const query = { id: `${id}` };
 			const checkID = await collection.findOne(query);
-			if (!checkID) {
+			const licenceDate = new Date(checkID.date);
+			const today = new Date();
+			if (licenceDate - today <= 0) {
 				console.log(`Klient o id: ${id} brak licencji`);
 				res.send({
 					lic: "nolic",
+					DataLicence: "expired",
 				});
 			} else {
-				res.send({ lic: "ok" });
+				res.send({ lic: "ok", dateLicense: checkID.date });
 			}
 		} catch (err) {
 			console.log(err);
