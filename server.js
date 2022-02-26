@@ -40,10 +40,15 @@ app.post("/", async (req, res) => {
 				console.log(`Klient o id: ${id} brak licencji`);
 				res.send({
 					lic: "nolic",
-					DataLicence: "expired",
+					dateLicense: "expired",
 				});
 			} else {
-				res.send({ lic: "ok", dateLicense: checkID.date });
+				res.send({
+					lic: "ok",
+					dateLicense: `${licenceDate.getHours()}:${licenceDate.getMinutes()} ${licenceDate.getDate()}.${
+						licenceDate.getMonth() + 1
+					}.${licenceDate.getFullYear()}`,
+				});
 			}
 		} catch (err) {
 			console.log(err);
