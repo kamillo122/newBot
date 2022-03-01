@@ -9,7 +9,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "dev" : "node server.js",
     "dev:watch" : "nodemon server.js",
