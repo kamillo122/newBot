@@ -1,26 +1,25 @@
-const express = require("express");
-const cors = require("cors");
-const { MongoClient } = require("mongodb");
+import WebSocket from "ws";
+import { MongoClient } from "mongodb";
 const uri =
 	"mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const app = express();
-const PORT = process.env.PORT || 8080;
 
-app.use(express.json());
-app.use(cors());
-
-app.listen(PORT, () => {
-	console.log(`it's alive on http://localhost:${PORT}`);
+const wss = new WebSocket.Server({
+	port: process.env.PORT || 8080,
 });
 
-app.post("/", async (req, res) => {
-	const { id } = req.body;
-	if (!id) {
-		console.log("No id provided");
-		res.status(418).send({
-			error: "Podaj id",
-		});
-	} else {
+wss.on("connection", async (ws) => {
+	ws.on("message", async (data) => {
+		try {
+			data = JSON.parse(data);
+		} catch (e) {
+			sendError(ws, "Wrong format");
+			return;
+		}
+		if (!data.hasOwnProperty("id")) {
+			sendError(ws, "Id no provided");
+			return;
+		}
+		const id = data.id;
 		const clientDb = await MongoClient.connect(uri, {
 			useNewUrlParser: true,
 		}).catch((err) => {
@@ -34,26 +33,50 @@ app.post("/", async (req, res) => {
 			const collection = db.collection("player");
 			const query = { id: `${id}` };
 			const checkID = await collection.findOne(query);
+			if (!checkID) {
+				sendError(ws, "Brak licencji");
+				return;
+			}
 			const licenceDate = new Date(checkID.date);
 			const today = new Date();
 			if (licenceDate - today <= 0) {
 				console.log(`Klient o id: ${id} brak licencji`);
-				res.send({
+				const messageObject = {
 					lic: "nolic",
-					dateLicense: "expired",
-				});
+					dateLicence: "expired",
+				};
+				sendCallback(ws, messageObject);
 			} else {
-				res.send({
+				const messageObject = {
 					lic: "ok",
-					dateLicense: `${licenceDate.getHours()}:${licenceDate.getMinutes()} ${licenceDate.getDate()}.${
+					dateLicence: `${licenceDate.getHours()}:${licenceDate.getMinutes()} ${licenceDate.getDate()}.${
 						licenceDate.getMonth() + 1
 					}.${licenceDate.getFullYear()}`,
-				});
+					count: wss.clients.size,
+				};
+				sendCallback(ws, messageObject);
 			}
 		} catch (err) {
 			console.log(err);
 		} finally {
 			clientDb.close();
 		}
-	}
+	});
 });
+
+const sendCallback = (ws, message) => {
+	const messageObject = {
+		type: "lic",
+		dateLicence: message.dateLicence,
+		count: message.count,
+	};
+	ws.send(JSON.stringify(messageObject));
+};
+
+const sendError = (ws, message) => {
+	const messageObject = {
+		type: "ERROR",
+		payload: message,
+	};
+	ws.send(JSON.stringify(messageObject));
+};
