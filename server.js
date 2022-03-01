@@ -1,5 +1,5 @@
-import WebSocket from "ws";
-import { MongoClient } from "mongodb";
+const { MongoClient } = require("mongodb");
+const WebSocket = require("ws");
 const uri =
 	"mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
