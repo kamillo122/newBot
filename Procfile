@@ -1,1 +1,1 @@
-web: deno run --allow-net=":$PORT" --allow-env server.ts
+web: deno run -A server.ts
