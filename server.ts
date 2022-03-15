@@ -4,7 +4,8 @@ import {
     MongoClient,
   } from "https://deno.land/x/mongo@v0.29.2/mod.ts";
 
-const wss = new WebSocketServer(8080);
+const port = parseInt(Deno.env.get('PORT') ?? '8000'); 
+const wss = new WebSocketServer(port);
 
 interface user {
     _id: Bson.ObjectId;
