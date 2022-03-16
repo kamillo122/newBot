@@ -2,7 +2,7 @@ import { WebSocketClient, WebSocketServer } from "https://deno.land/x/websocket@
 import {
     Bson,
     MongoClient,
-  } from "https://deno.land/x/mongo@v0.29.2/mod.ts";
+  } from "https://deno.land/x/mongo@v0.29.1/mod.ts";
 
 const port = parseInt(Deno.env.get('PORT') ?? '8000'); 
 const wss = new WebSocketServer(port);
