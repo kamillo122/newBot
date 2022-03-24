@@ -2,9 +2,9 @@ import { WebSocketClient, WebSocketServer } from "https://deno.land/x/websocket@
 import {
     Bson,
     MongoClient,
-  } from "https://deno.land/x/mongo@v0.29.1/mod.ts";
+  } from "https://deno.land/x/mongo@v0.29.2/mod.ts";
 
-const port = parseInt(Deno.env.get('PORT') ?? '8000'); 
+const port = parseInt(Deno.env.get('PORT') ?? '8000');
 const wss = new WebSocketServer(port);
 
 interface user {
@@ -28,7 +28,22 @@ wss.on("connection", (ws: WebSocketClient) => {
         }
         const idFromUser: string = message.id;
         const client = new MongoClient();
-        await client.connect("mongodb+srv://AdminKamilo:I1udrg12@cluster0.8from.mongodb.net/myFirstDatabase?authMechanism=SCRAM-SHA-1");
+        await client.connect({
+            db: "margo",
+            tls: true,
+            servers: [
+              {
+                host: "cluster0-shard-00-02.8from.mongodb.net",
+                port: 27017,
+              },
+            ],
+            credential: {
+              username: "AdminKamilo",
+              password: "I1udrg12",
+              db: "margo",
+              mechanism: "SCRAM-SHA-1",
+            },
+          });
         const db = client.database("margo");
         const users = db.collection<user>("player");
         const hasLicence = await users.findOne({id: idFromUser});
