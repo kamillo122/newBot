@@ -51,6 +51,7 @@ wss.on("connection", (ws: WebSocketClient) => {
             sendMessage(ws, {type: "error", message: "Brak licencji!"});
             return;
         }
+        console.log(wss.clients.size);
         const dateToSend = `${hasLicence.date.getHours()}:${hasLicence.date.getMinutes()} ${hasLicence.date.getDate()}.${
             hasLicence.date.getMonth() + 1
         }.${hasLicence.date.getFullYear()}`;
